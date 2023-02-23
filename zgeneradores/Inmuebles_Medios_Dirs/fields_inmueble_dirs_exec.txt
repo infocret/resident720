@@ -1,0 +1,74 @@
+====================******* Comando Generador desde archivo .json *********=========================================
+
+=========================================================================================================================================
+
+**** USAR ESTA PLANTILLA para ejecutar la creacion de codigo, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+
+sustituir <InmuebleDir >   por el nombre de la tabla en base de datos pero en singular !!!
+
+OJO !!! 
+
+Si la tabla en DB es:  palabra_otrapalabras (palabras en minusculas con guion bajo "_" en medio y en plural)
+en la instruccion debe ser:  PalablaOtrapalabra (Nombres juntos capitalizados en singular sin la "s" final)
+
+sustituir <fields_DocType > por el nombre del archivo que tiene la definicion de campos
+
+php artisan infyom:scaffold InmuebleDir --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_Inmueble_Dirs.json"
+
+ 
+**** USAR ESTA PLANTILLA para realizar un rollback, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+php artisan infyom:rollback InmuebleDir  scaffold
+php artisan infyom:rollback InmuebleDir  api
+php artisan infyom:rollback InmuebleDir  api_scaffold
+
+
+====================================================================
+
+
+C:\laragon\www\testc1 (master)
+λ php artisan infyom:scaffold InmuebleDir --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_Inmueble_Dirs.json"
+
+Migration created:
+2018_05_02_224209_create_inmueble_dirs_table.php
+
+Model created:
+InmuebleDir.php
+
+Repository created:
+InmuebleDirRepository.php
+
+Create Request created:
+CreateInmuebleDirRequest.php
+
+Update Request created:
+UpdateInmuebleDirRequest.php
+
+Controller created:
+InmuebleDirController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+inmuebleDirs routes added.
+
+inmuebleDirs menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_05_02_224209_create_inmueble_dirs_table
+Migrated:  2018_05_02_224209_create_inmueble_dirs_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+λ

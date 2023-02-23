@@ -1,0 +1,23 @@
+php artisan infyom:rollback persona scaffold
+php artisan infyom:rollback persona api
+php artisan infyom:rollback persona api_scaffold
+
+
+php artisan infyom:scaffold persona --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_persona.json"
+
+
+
+Model file deleted: persona.php
+Repository file deleted: personaRepository.php
+Create API Request file deleted: CreatepersonaRequest.php
+Update API Request file deleted: UpdatepersonaRequest.php
+Controller file deleted: personaController.php
+table.blade.php file deleted
+index.blade.php file deleted
+fields.blade.php file deleted
+create.blade.php file deleted
+edit.blade.php file deleted
+show.blade.php file deleted
+show_fields.blade.php file deleted
+scaffold routes deleted
+Generating autoload files

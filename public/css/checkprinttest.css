@@ -1,0 +1,22 @@
+
+
+.cheque{
+   background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png") ;
+  /* background-repeat: no-repeat; */
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 600px;
+   width: 100% ;
+   text-align: center;
+}
+
+.ptext {  
+  /* position: fixed; */
+  left:100px;
+  bottom: 50px;  
+  width: 100px;
+  height:30px;
+  background-color: yellow;
+}

@@ -1,0 +1,10 @@
+Contiene los archivos Json generados por
+la aplicacion para realizar el scaffolf desde infyoms.
+
+Copia archivo de excell para generacion de json
+
+Crea archivo json de definicion de campos
+
+Crea archivo txt con comandos de consola para 
+generacion y rollback de scaffold
+

@@ -1,0 +1,95 @@
+
+
+Antes de ejecutar respaldar controller y repositpory
+
+ejecutar con --skyp=migration,model,views,menu
+
+Para que no genere migracion modelo ni vistas, ni agregue al menu
+
+Al finalizar borrar ruta web que seguro la repetira
+
+===============================================================
+
+php artisan infyom:api_scaffold countries --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_countries.json" --skip=migration,model,views,menu
+
+=============================================================================
+
+
+C:\laragon\www\Kali (master)
+λ php artisan infyom:api_scaffold countries --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_countries.json" --skip=migration,model,views,menu
+
+Repository created:
+countriesRepository.php				<---- RESLAPDAR !!!
+
+Create Request created:
+CreatecountriesAPIRequest.php
+
+Update Request created:
+UpdatecountriesAPIRequest.php
+
+API Controller created:
+countriesAPIController.php
+
+countries api routes added.
+
+RepositoryTest created:
+countriesRepositoryTest.php
+
+TestTrait created:
+MakecountriesTrait.php
+
+ApiTest created:
+countriesApiTest.php
+
+Create Request created:
+CreatecountriesRequest.php			<---- RESLAPDAR si se toco !!!
+
+Update Request created:
+UpdatecountriesRequest.php			<---- RESLAPDAR si se toco !!!
+
+Controller created:
+countriesController.php				<---- RESLAPDAR !!!
+
+countries routes added.				<---- Borrar Ruta WEB !!!
+
+Generating autoload files
+
+C:\laragon\www\Kali (master)
+λ
+
+
+
+
+=============================================================================
+C:\laragon\www\Kali (master)
+λ php artisan infyom:api_scaffold countries --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_countries.json" --skip=migration,model,views,menu
+
+Create Request created:
+CreatecountriesAPIRequest.php
+
+Update Request created:
+UpdatecountriesAPIRequest.php
+
+countries api routes added.
+
+RepositoryTest created:
+countriesRepositoryTest.php
+
+TestTrait created:
+MakecountriesTrait.php
+
+ApiTest created:
+countriesApiTest.php
+
+Create Request created:
+CreatecountriesRequest.php
+
+Update Request created:
+UpdatecountriesRequest.php
+
+countries routes added.
+Generating autoload files
+
+C:\laragon\www\Kali (master)
+λ
+

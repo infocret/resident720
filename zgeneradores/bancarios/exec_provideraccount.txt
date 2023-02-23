@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold provideraccount --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_provideraccount.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback provideraccount scaffold
+
+php artisan infyom:rollback provideraccount api
+
+php artisan infyom:rollback provideraccount api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold provideraccount --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_provideraccount.json"
+
+Migration created:
+2018_07_27_023751_create_provideraccounts_table.php
+
+Model created:
+provideraccount.php
+
+Repository created:
+provideraccountRepository.php
+
+Create Request created:
+CreateprovideraccountAPIRequest.php
+
+Update Request created:
+UpdateprovideraccountAPIRequest.php
+
+API Controller created:
+provideraccountAPIController.php
+
+provideraccounts api routes added.
+
+RepositoryTest created:
+provideraccountRepositoryTest.php
+
+TestTrait created:
+MakeprovideraccountTrait.php
+
+ApiTest created:
+provideraccountApiTest.php
+
+Create Request created:
+CreateprovideraccountRequest.php
+
+Update Request created:
+UpdateprovideraccountRequest.php
+
+DataTable created:
+provideraccountDataTable.php
+
+Controller created:
+provideraccountController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+provideraccounts routes added.
+
+provideraccounts menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_27_023751_create_provideraccounts_table
+Migrated:  2018_07_27_023751_create_provideraccounts_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

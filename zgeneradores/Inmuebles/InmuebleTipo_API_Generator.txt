@@ -1,0 +1,118 @@
+
+php artisan infyom:rollback InmuebleTipo api_scaffold
+
+
+No crear Migracion
+No crear Modelo
+No crear Repository
+No crear Controller
+No Crear Vistas
+No Agregar menu
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+
+php artisan infyom:api_scaffold InmuebleTipo --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_InmuebleTipo.json"
+
+php artisan infyom:api_scaffold InmuebleTipo --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_InmuebleTipo.json" --skip=migration,model,controllers,views,menu,repository
+
+
+php artisan infyom:api_scaffold countries --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_countries.json" --skip=migration,model,controllers,views,menu,repository
+
+
+========================================================================
+
+Omitir generación de archivos
+The Generator también le brinda la flexibilidad de elegir qué desea generar o qué desea omitir. Al usar el comando generador, puede especificar la opción omitir para omitir archivos que no se generarán.
+
+
+php artisan infyom:api_scaffold Post --skip=routes,migration,model
+
+Puede especificar cualquier archivo de la siguiente lista:
+
+migration
+model
+controllers
+api_controller
+scaffold_controller
+scaffold_requests
+routes
+api_routes
+scaffold_routes
+views
+tests
+menu
+dump-autoload
+
+
+========================================================================
+C:\laragon\www\Kali (master)
+λ php artisan infyom:api_scaffold InmuebleTipo --fieldsFile="C:\laragon\www\Kali\zgeneradores\fields_InmuebleTipo.json"
+
+Migration created:
+2018_05_04_033124_create_inmueble_tipos_table.php
+
+Model created:
+InmuebleTipo.php
+
+Repository created:
+InmuebleTipoRepository.php
+
+Create Request created:
+CreateInmuebleTipoAPIRequest.php
+
+Update Request created:
+UpdateInmuebleTipoAPIRequest.php
+
+API Controller created:
+InmuebleTipoAPIController.php
+
+inmuebleTipos api routes added.
+
+RepositoryTest created:
+InmuebleTipoRepositoryTest.php
+
+TestTrait created:
+MakeInmuebleTipoTrait.php
+
+ApiTest created:
+InmuebleTipoApiTest.php
+
+Create Request created:
+CreateInmuebleTipoRequest.php
+
+Update Request created:
+UpdateInmuebleTipoRequest.php
+
+Controller created:
+InmuebleTipoController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+inmuebleTipos routes added.
+
+inmuebleTipos menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > n
+
+Generating autoload files
+
+C:\laragon\www\Kali (master)

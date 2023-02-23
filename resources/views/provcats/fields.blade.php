@@ -1,0 +1,31 @@
+{{-- <!-- Tipo Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('tipo', 'Tipo:') !!}
+    {!! Form::text('tipo', null, ['class' => 'form-control']) !!}
+</div>
+ --}}
+
+<!-- Tipo Field -->
+<div class="form-group col-sm-12">
+    {!! Form::label('tipo', 'Tipo:') !!}
+    <label class="radio-inline">
+        {!! Form::radio('tipo', "SE", null) !!} Servicios
+    </label>
+
+    <label class="radio-inline">
+        {!! Form::radio('tipo', "VP", null) !!} Venta productos y/o materiales
+    </label>
+    
+</div>
+
+<!-- Categoria Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('categoria', 'Categoria:') !!}
+    {!! Form::text('categoria', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('provcats.index') !!}" class="btn btn-default">Cancelar</a>
+</div>

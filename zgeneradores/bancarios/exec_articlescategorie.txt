@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold articlescategorie --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_articlescategorie.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback articlescategorie scaffold
+
+php artisan infyom:rollback articlescategorie api
+
+php artisan infyom:rollback articlescategorie api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold articlescategorie --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_articlescategorie.json"
+
+Migration created:
+2018_07_28_040656_create_articlescategories_table.php
+
+Model created:
+articlescategorie.php
+
+Repository created:
+articlescategorieRepository.php
+
+Create Request created:
+CreatearticlescategorieAPIRequest.php
+
+Update Request created:
+UpdatearticlescategorieAPIRequest.php
+
+API Controller created:
+articlescategorieAPIController.php
+
+articlescategories api routes added.
+
+RepositoryTest created:
+articlescategorieRepositoryTest.php
+
+TestTrait created:
+MakearticlescategorieTrait.php
+
+ApiTest created:
+articlescategorieApiTest.php
+
+Create Request created:
+CreatearticlescategorieRequest.php
+
+Update Request created:
+UpdatearticlescategorieRequest.php
+
+DataTable created:
+articlescategorieDataTable.php
+
+Controller created:
+articlescategorieController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+articlescategories routes added.
+
+articlescategories menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_040656_create_articlescategories_table
+Migrated:  2018_07_28_040656_create_articlescategories_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

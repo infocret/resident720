@@ -1,0 +1,20 @@
+Contiene los archivos en formato PDF de notas / facturas
+que se enlazan a movimientos.
+
+El nombre se genera:
+
+inmueble_id + folio + GranTotalSinDecimales + fecha(YYYYMMDDMMSS)
+
+9999 + 999999 + 99999999 + 99999999999999 
+   4        6          8               14
+
+31 digitos  			
+
+Se usa 
+str_pad($numero, 2, "0", STR_PAD_LEFT)
+
+La ventaja de usar str_pad, es que puedes modificar el número de espacios 
+a rellenar con solo cambiar el 2º parámetro, o el carácter de relleno 
+cambiando el 3º parámetro. Además puedes pasar un 4º parámetro con los 
+valores STR_PAD_LEFT, STR_PAD_RIGHT o STR_PAD_BOTH para rellenar 
+por la izquierda, derecha o ambos lados de la cadena original.

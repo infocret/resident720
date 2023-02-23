@@ -1,0 +1,19 @@
+/* 
+Estilo para tabla con scroll
+Desarrollo: Julio Buendia
+Fecha: 2018 03 15   12 : 00
+*/
+
+
+
+#head1 {
+     overflow:auto;
+     /*height:200px; */
+    /* width:300px;   */
+}
+#head1 table {
+     width:100%; 
+    /* background-color:lightgray; */
+}
+
+

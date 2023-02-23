@@ -1,0 +1,90 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false	
+},
+{
+    "name": "estado",
+    "dbType": "string,25",
+    "htmlType": "text",
+    "validations": "required|max:25|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "renapo",
+    "dbType": "string,2",
+    "htmlType": "text",
+    "validations": "required|max:2|min:2",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "abrev",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "validations": "required|max:10|min:2",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "dosdig",
+    "dbType": "string,8",
+    "htmlType": "text",
+    "validations": "required|max:8|min:2",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "iso",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "validations": "required|max:10|min:2",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]                      

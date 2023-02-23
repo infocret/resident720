@@ -1,0 +1,24 @@
+====================******* Comando Generador desde archivo .json *********=========================================
+
+=========================================================================================================================================
+
+**** USAR ESTA PLANTILLA para ejecutar la creacion de codigo, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+
+sustituir <PersonaInmuebleReltipo >   por el nombre de la tabla en base de datos pero en singular !!!
+
+OJO !!! 
+
+Si la tabla en DB es:  palabra_otrapalabras (palabras en minusculas con guion bajo "_" en medio y en plural)
+en la instruccion debe ser:  PalablaOtrapalabra (Nombres juntos capitalizados en singular sin la "s" final)
+
+sustituir <fields_PersonaInmuebleReltipo > por el nombre del archivo que tiene la definicion de campos
+
+php artisan infyom:scaffold PersonaInmuebleReltipo   --fieldsFile="C:\laragon\www\testc1\zgeneradores\persona_inmueble_reltipos.json"
+
+
+**** USAR ESTA PLANTILLA para realizar un rollback, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+php artisan infyom:rollback PersonaInmuebleReltipo  scaffold
+php artisan infyom:rollback PersonaInmuebleReltipo  api
+php artisan infyom:rollback PersonaInmuebleReltipo  api_scaffold

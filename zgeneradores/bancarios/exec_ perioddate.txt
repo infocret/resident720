@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold  perioddate --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_ perioddate.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback  perioddate scaffold
+
+php artisan infyom:rollback  perioddate api
+
+php artisan infyom:rollback  perioddate api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold  perioddate --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_ perioddate.json"
+
+Migration created:
+2018_07_28_061300_create_perioddates_table.php
+
+Model created:
+perioddate.php
+
+Repository created:
+perioddateRepository.php
+
+Create Request created:
+CreateperioddateAPIRequest.php
+
+Update Request created:
+UpdateperioddateAPIRequest.php
+
+API Controller created:
+perioddateAPIController.php
+
+perioddates api routes added.
+
+RepositoryTest created:
+perioddateRepositoryTest.php
+
+TestTrait created:
+MakeperioddateTrait.php
+
+ApiTest created:
+perioddateApiTest.php
+
+Create Request created:
+CreateperioddateRequest.php
+
+Update Request created:
+UpdateperioddateRequest.php
+
+DataTable created:
+perioddateDataTable.php
+
+Controller created:
+perioddateController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+perioddates routes added.
+
+perioddates menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_061300_create_perioddates_table
+Migrated:  2018_07_28_061300_create_perioddates_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

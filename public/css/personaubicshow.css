@@ -1,0 +1,51 @@
+/* 
+Estilo para mostrar datos y exportar a PDF
+Desarrollo: Julio Buendia
+Fecha: 2018 03 15   12 : 00
+*/
+
+ /*Titulos de campo*/
+#dirl,
+#ref1l,
+#ref2l,
+#obsl
+ {
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 4px;
+  padding: 4px 4px 4px 9px;
+  border: none;
+  font: normal normal bold 15px/1 Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  /*text-shadow: 2px 2px 3px rgba(0,0,0,0.5) ;*/
+  width:70%;
+}
+
+ /*Titulos de campo*/
+#dird,
+#ref1d,
+#ref2d,
+#obsd
+ {
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 2px;
+  padding: 4px 4px 4px 10px;
+  border: 1px solid rgba(104,99,99,1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: normal normal bold 14px/1 Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+   -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; 
+  background: #ecf0f1;
+  -webkit-box-shadow: 4px 4px 6px 1px rgba(0,0,0,0.4) ; 
+  box-shadow: 4px 4px 6px 1px rgba(0,0,0,0.4) ;
+  width:85%;
+}

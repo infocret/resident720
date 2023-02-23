@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold propertycontractservice --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_propertycontractservice.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback propertycontractservice scaffold
+
+php artisan infyom:rollback propertycontractservice api
+
+php artisan infyom:rollback propertycontractservice api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold propertycontractservice --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_propertycontractservice.json"
+
+Migration created:
+2018_07_28_060819_create_propertycontractservices_table.php
+
+Model created:
+propertycontractservice.php
+
+Repository created:
+propertycontractserviceRepository.php
+
+Create Request created:
+CreatepropertycontractserviceAPIRequest.php
+
+Update Request created:
+UpdatepropertycontractserviceAPIRequest.php
+
+API Controller created:
+propertycontractserviceAPIController.php
+
+propertycontractservices api routes added.
+
+RepositoryTest created:
+propertycontractserviceRepositoryTest.php
+
+TestTrait created:
+MakepropertycontractserviceTrait.php
+
+ApiTest created:
+propertycontractserviceApiTest.php
+
+Create Request created:
+CreatepropertycontractserviceRequest.php
+
+Update Request created:
+UpdatepropertycontractserviceRequest.php
+
+DataTable created:
+propertycontractserviceDataTable.php
+
+Controller created:
+propertycontractserviceController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+propertycontractservices routes added.
+
+propertycontractservices menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_060819_create_propertycontractservices_table
+Migrated:  2018_07_28_060819_create_propertycontractservices_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

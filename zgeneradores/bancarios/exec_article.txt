@@ -1,0 +1,91 @@
+php artisan infyom:api_scaffold article --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_article.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback article scaffold
+
+php artisan infyom:rollback article api
+
+php artisan infyom:rollback article api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold article --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_article.json"
+
+Migration created:
+2018_07_28_040915_create_articles_table.php
+
+Model created:
+article.php
+
+Repository created:
+articleRepository.php
+
+Create Request created:
+CreatearticleAPIRequest.php
+
+Update Request created:
+UpdatearticleAPIRequest.php
+
+API Controller created:
+articleAPIController.php
+
+articles api routes added.
+
+RepositoryTest created:
+articleRepositoryTest.php
+
+TestTrait created:
+MakearticleTrait.php
+
+ApiTest created:
+articleApiTest.php
+
+Create Request created:
+CreatearticleRequest.php
+
+Update Request created:
+UpdatearticleRequest.php
+
+DataTable created:
+articleDataTable.php
+
+Controller created:
+articleController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+articles routes added.
+
+articles menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_040915_create_articles_table
+Migrated:  2018_07_28_040915_create_articles_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

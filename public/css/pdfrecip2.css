@@ -1,0 +1,66 @@
+html {
+margin: 0;
+}
+body {
+margin: 2mm 15mm 2mm 2mm;  /*este margen ajusta el diseño en el render de domPDF a tamaño carta*/
+}
+/*  *****************     Logotipo ******************* */
+#logo {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#logo img {
+  width: 150px;           /* Ancho del logotipo */
+}
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+
+.tithl{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  text-align: left;  
+  padding: 2px ;
+}
+
+.tithr{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  text-align: right;  
+  padding: 2px ;
+}
+
+.dathl{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  text-align: left;  
+  padding: 2px ;
+}
+
+.dathr{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 11px;  
+  color: #ffffff;
+  text-align: right;  
+  padding: 2px ;
+}

@@ -1,0 +1,117 @@
+
+/*  *****************     Logotipo ******************* */
+#logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#logo img {
+  width: 150px;           /* Ancho del logotipo */
+}
+/* *******************   El titulo de "recibo" *********** */
+.titulo  {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center; 
+  background: #DCDEE0;
+  padding: 2px ;
+}
+/*  *****************   Condominio, Proveedor ******************* */
+.datpc{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px; 
+  font-style: italic; 
+  color: #000000;
+  text-align: center;   
+  padding: 2px ;
+}
+/*  *****************  General para todas las tablas ******************* */
+table{
+width:106%;   /* Este ancho se ajusta a el diseño dom PDF tamaño carta */
+height:auto;
+border-collapse:collapse;
+text-align:center;
+}
+/* Este CSS asigna un color diferente a a cada fila [tr] 
+de la tabla puede invertir el orden con even en lugar de odd
+tr:nth-child(odd) {  
+  background-color: #f2f2f2;
+}
+*/
+/*  *****************  Diseño para las cabeceras ******************* */
+th.tit1 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center; 
+  background: #DCDEE0;
+  padding: 4px 10px;
+  border: 2px solid white;
+}
+/*  *****************  Diseño para los Datos ******************* */
+td.dat1 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;   
+  padding: 4px 10px; 
+}
+/*  *****************  Diseño para las cabeceras de la tabla detalle ******************* */
+th.tit2 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center; 
+  background: #DCDEE0;
+  padding: 4px 10px;
+  border: 2px solid white;
+}
+/*  *****************  Diseño para los Datos de detalle******************* */
+td.dat2l {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: left;   
+  padding: 4px 10px;   
+  /*border: 1px solid black;*/
+  border-bottom: 1px solid black;
+}
+
+td.dat2c {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;   
+  padding: 4px 10px;   
+  /*border: 1px solid black;*/
+  border-bottom: 1px solid black;
+}
+
+td.dat2r {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: right;   
+  padding: 4px 10px;   
+  /*border: 1px solid black;*/
+  border-bottom: 1px solid black;
+}
+/*  ***************** Folio ******************* */
+td.dat3 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #000000;
+  text-align: center;   
+  padding: 4px 10px;     
+}
+
+
+/* *************************************************************************** */
+/************************************* Aqui se termina ********************* */
+

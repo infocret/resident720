@@ -1,0 +1,121 @@
+php artisan infyom:api_scaffold propaccount --datatables=false --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_propaccount.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback propaccount scaffold
+
+php artisan infyom:rollback propaccount api
+
+php artisan infyom:rollback propaccount api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+
+
+C:\laragon\www\testc1 (master)
+?  php artisan infyom:rollback propaccount scaffold
+Model file deleted: propaccount.php
+Repository file deleted: propaccountRepository.php
+Create API Request file deleted: CreatepropaccountAPIRequest.php
+Update API Request file deleted: UpdatepropaccountAPIRequest.php
+API Controller file deleted: propaccountAPIController.php
+api routes deleted
+Create API Request file deleted: CreatepropaccountRequest.php
+Update API Request file deleted: UpdatepropaccountRequest.php
+Controller file deleted: propaccountController.php
+DataTable file deleted: propaccountController.php
+table.blade.php file deleted
+index.blade.php file deleted
+fields.blade.php file deleted
+create.blade.php file deleted
+edit.blade.php file deleted
+show.blade.php file deleted
+show_fields.blade.php file deleted
+datatables_actions.blade.php file deleted
+scaffold routes deleted
+Repository Test file deleted: propaccountRepositoryTest.php
+Test trait file deleted: MakepropaccountTrait.php
+API Test file deleted: propaccountApiTest.php
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?
+
+=================================================================================================
+=================================================================================================
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold propaccount --datatables=false --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_propaccount.json"
+
+Migration created:
+2019_04_10_211419_create_propaccounts_table.php
+
+Model created:
+propaccount.php
+
+Repository created:
+propaccountRepository.php
+
+Create Request created:
+CreatepropaccountAPIRequest.php
+
+Update Request created:
+UpdatepropaccountAPIRequest.php
+
+API Controller created:
+propaccountAPIController.php
+
+propaccounts api routes added.
+
+RepositoryTest created:
+propaccountRepositoryTest.php
+
+TestTrait created:
+MakepropaccountTrait.php
+
+ApiTest created:
+propaccountApiTest.php
+
+Create Request created:
+CreatepropaccountRequest.php
+
+Update Request created:
+UpdatepropaccountRequest.php
+
+Controller created:
+propaccountController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+propaccounts routes added.
+
+propaccounts menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2019_04_10_211419_create_propaccounts_table
+Migrated:  2019_04_10_211419_create_propaccounts_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

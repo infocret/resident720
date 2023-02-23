@@ -1,0 +1,68 @@
+[
+{
+	"name": "id",
+	"dbType": "increments",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": true,
+	"inForm": false,
+	"inIndex": false
+},
+{
+    "name": "continente",
+    "dbType": "string,15",
+    "htmlType": "text",
+    "validations": "required|max:15|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 	
+{
+    "name": "pais",
+    "dbType": "string,40",
+    "htmlType": "text",
+    "validations": "required|max:40|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "capital",
+    "dbType": "string,40",
+    "htmlType": "text",
+    "validations": "required|max:40|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+	"name": "created_at",
+	"dbType": "timestamp",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": false,
+	"inForm": false,
+	"inIndex": false
+},
+{
+	"name": "updated_at",
+	"dbType": "timestamp",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": false,
+	"inForm": false,
+	"inIndex": false
+}
+]

@@ -1,0 +1,88 @@
+php artisan infyom:api_scaffold checkbookprint --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_checkbookprint.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback checkbookprint scaffold
+
+php artisan infyom:rollback checkbookprint api
+
+php artisan infyom:rollback checkbookprint api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold checkbookprint --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_checkbookprint.json"
+
+
+
+Migration created:
+2020_03_27_021153_create_checkbookprints_table.php
+
+Model created:
+checkbookprint.php
+
+Repository created:
+checkbookprintRepository.php
+
+Create Request created:
+CreatecheckbookprintAPIRequest.php
+
+Update Request created:
+UpdatecheckbookprintAPIRequest.php
+
+API Controller created:
+checkbookprintAPIController.php
+
+checkbookprints api routes added.
+
+RepositoryTest created:
+checkbookprintRepositoryTest.php
+
+TestTrait created:
+MakecheckbookprintTrait.php
+
+ApiTest created:
+checkbookprintApiTest.php
+
+Create Request created:
+CreatecheckbookprintRequest.php
+
+Update Request created:
+UpdatecheckbookprintRequest.php
+
+Controller created:
+checkbookprintController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+checkbookprints routes added.
+
+checkbookprints menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2020_03_27_021153_create_checkbookprints_table
+Migrated:  2020_03_27_021153_create_checkbookprints_table
+Generating autoload files

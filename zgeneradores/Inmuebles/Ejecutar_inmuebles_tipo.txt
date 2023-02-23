@@ -1,0 +1,242 @@
+====================******* Validaciones *********=========================================
+
+required
+min:5
+max:5
+email
+numeric
+
+=====******* Establecer relacion foranea en tabla principal********=========================
+
+En las relaciones de tipo uno a muchos el id se relaciona en la otra tabla
+para eso se define la relacion en esta tabla creando el campo que aparecera en la otra taba
+
+
+Some relationships, like One to Many do not have a local field in current model, 
+but some other model contains its primary key as foreign key. In such cases, you can define 
+relationship by following definition:
+
+Uno a muchos
+{
+    "name": "persona_id",    
+    "type": "relation",
+    "relation": "1tm,Comment,post_id"
+} 
+
+Muchos a muchos
+{
+    "name": "persona_id",    
+    "type": "relation",
+    "relation": "mtm,medio,MeedioPersona,persona_id,medio_id"
+} 
+
+=====******* Establecer relaciones foranea l********=========================
+
+{
+    "name": "medio_id",
+      "dbType": "integer:unsigned:default,0:foreign,medios,id",
+    "htmlType": "text",
+    "relation": "mt1,medio,medio_id,id"   
+}, 
+{
+    "name": "persona_id",
+      "dbType": "integer:unsigned:default,0:foreign,personas,id",
+    "htmlType": "text",
+    "relation": "mt1,persona,persona_id,id"   
+}, 
+
+En el modelo peersona Se genera este codigo si la rel es muchos a muchos y se usa la tabla pivote para llegar desde una a otra
+/**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     **/
+    public function meedios()
+    {
+        return $this->belongsToMany(\App\Models\meedio::class, 'MeedioPeersona', 'persona_id', 'medio_id');
+    }
+
+En el modelo peersona Se genera este codigo si la rel es uno a muchos 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     **/
+    public function meedioPeersonas()
+    {
+        return $this->hasMany(\App\Models\MeedioPeersonas::class, 'persona_id', 'id');
+    }
+
+
+En el modelo meedio_peersonas se genera rel es uno a muchos  o muchos a muchos y esta es la tabla pivote
+/**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     **/
+    public function meedio()
+    {
+        return $this->belongsTo(\App\Models\meedio::class, 'medio_id', 'id');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     **/
+    public function peersona()
+    {
+        return $this->belongsTo(\App\Models\peersona::class, 'persona_id', 'id');
+    }
+
+
+
+
+
+
+
+
+En el modelo meedio Se genera este codigo si la rel es muchos a muchos y se usa la tabla pivote para llegar desde una a otra
+ /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     **/
+    public function peersonas()
+    {
+        return $this->belongsToMany(\App\Models\peersona::class, 'MeedioPeersona', 'medio_id', 'persona_id');
+    }
+
+En el modelo meedio Se genera este codigo si la rel es uno a muchos 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     **/
+    public function meedioPeersonas()
+    {
+        return $this->hasMany(\App\Models\MeedioPeersona::class, 'medio_id', 'id');
+    }
+=====******* Tipo de relacion ********=========================
+
+
+Relationships Inputs
+Relationship Type		Valid Examples
+One to One			1t1,Phone 
+				1t1,Phone,phone_id 
+				1t1,Phone,phone_id,id 
+
+One to Many			1tm,Comment 
+				1tm,Comment,post_id 
+				1tm,Comment,post_id,id
+
+Many to One			mt1,Post 
+				mt1,Post,post_id
+
+Many to Many			mtm,Role 
+				mtm,Role,user_roles 
+				mtm,Role,user_roles,user_id,role_id 
+
+============================================================================================
+==============================***** Roolbacks *****=========================================
+============================================================================================
+php artisan infyom:rollback inmueble scaffold
+php artisan infyom:rollback inmueble api
+php artisan infyom:rollback inmueble api_scaffold
+============================================================================================
+php artisan infyom:rollback InmuebleTipo scaffold
+php artisan infyom:rollback InmuebleTipo api
+php artisan infyom:rollback InmuebleTipo api_scaffold
+============================================================================================
+
+============================================================================================
+
+=======================================================================================================================================================
+=======================================================================================================================================================
+php artisan infyom:scaffold InmuebleTipo --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_InmuebleTipo.json"
+
+php artisan infyom:scaffold inmueble --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_inmueble.json"
+
+=======================================================================================================================================================
+=======================================================================================================================================================
+
+
+============================================================================================
+============================================================================================
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:scaffold InmuebleTipo --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_InmuebleTipo.json"
+
+Migration created:
+2018_02_16_082206_create_inmueble_tipos_table.php
+
+Model created:
+InmuebleTipo.php
+
+Repository created:
+InmuebleTipoRepository.php
+
+Create Request created:
+CreateInmuebleTipoRequest.php
+
+Update Request created:
+UpdateInmuebleTipoRequest.php
+
+Controller created:
+InmuebleTipoController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+inmuebleTipos routes added.
+
+inmuebleTipos menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_02_16_082206_create_inmueble_tipos_table
+Migrated:  2018_02_16_082206_create_inmueble_tipos_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:scaffold inmueble --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_inmueble.json"
+
+Migration created:
+2018_02_16_082410_create_inmuebles_table.php
+
+Model created:
+inmueble.php
+
+Repository created:
+inmuebleRepository.php
+
+Create Request created:
+CreateinmuebleRequest.php
+
+Update Request created:
+UpdateinmuebleRequest.php
+
+Controller created:
+inmuebleController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+inmuebles routes added.
+
+inmuebles menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_02_16_082410_create_inmuebles_table
+Migrated:  2018_02_16_082410_create_inmuebles_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

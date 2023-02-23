@@ -1,0 +1,69 @@
+/* 
+Estilo para impresion de cheque
+Desarrollo: Julio Buendia
+Fecha: 2020 06 08   20 : 59
+https://divtable.com/table-styler/
+*/
+
+html {
+margin: 0;
+}
+body {
+margin: 2mm 15mm 2mm 2mm;  /*este margen ajusta el diseño en el render de domPDF a tamaño carta*/
+}
+
+/*.cheque{
+
+  background-image: url('/imgchecks/checkSantander.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+         // comentado /// background-attachment: cover;
+    background-size: contain;    
+    width:  450px;
+    height: 150px;
+}*/
+
+.datetx {  
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:12pt;
+  text-align:left; 
+  position: fixed;  
+  left:600px;
+  top: 43px;       
+}
+
+.nomtx {  
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:12pt;
+  text-align:left; 
+  position: fixed;  
+  left:90px;
+  top: 110px;       
+}
+
+.montotx {  
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:12pt;
+  text-align:left; 
+  position: fixed;  
+  left:690px;
+  top: 110px;       
+}
+
+.montoltx {  
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:12pt;
+  text-align:left; 
+  position: fixed;  
+  left:80px;
+  top: 155px;       
+}
+
+.leytx {  
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:12pt;
+  text-align:left; 
+  position: fixed;  
+  left:80px;
+  top: 287px;       
+}

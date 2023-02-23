@@ -1,0 +1,9 @@
+Contiene las imagenesde identificacion de las entidades Personas
+
+La imagen default es inmuid.png
+
+El nombre de los archivo subidos se genera con 
+
+inmueble.nombre + fecha(YYMMDD)+ (HHMMSS)
+
+

@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold event --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_event.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback event scaffold
+
+php artisan infyom:rollback event api
+
+php artisan infyom:rollback event api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold event --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_event.json"
+
+Migration created:
+2018_07_28_042643_create_events_table.php
+
+Model created:
+event.php
+
+Repository created:
+eventRepository.php
+
+Create Request created:
+CreateeventAPIRequest.php
+
+Update Request created:
+UpdateeventAPIRequest.php
+
+API Controller created:
+eventAPIController.php
+
+events api routes added.
+
+RepositoryTest created:
+eventRepositoryTest.php
+
+TestTrait created:
+MakeeventTrait.php
+
+ApiTest created:
+eventApiTest.php
+
+Create Request created:
+CreateeventRequest.php
+
+Update Request created:
+UpdateeventRequest.php
+
+DataTable created:
+eventDataTable.php
+
+Controller created:
+eventController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+events routes added.
+
+events menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_042643_create_events_table
+Migrated:  2018_07_28_042643_create_events_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

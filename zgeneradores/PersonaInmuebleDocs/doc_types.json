@@ -1,0 +1,84 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "filetype_id",
+      "dbType": "integer:unsigned:default,0:foreign,file_types,id",
+    "htmlType": "text",
+    "relation": "mt1,FileType,filetype_id,id"  
+},	
+{
+    "name": "nombre",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "validations": "required|max:100|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "sizemin",
+    "dbType": "integer",
+    "htmlType": "number",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "sizemax",
+    "dbType": "integer",
+    "htmlType": "number",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}, 
+{
+    "name": "doctype_id",    
+    "type": "relation",
+    "relation": "1tm,PersonaDocument,doctype_id,id" 
+}, 
+{
+    "name": "doctype_id",    
+    "type": "relation",
+    "relation": "1tm,PersInmuReltipoReqDoc,doctype_id,id" 
+}
+]                      

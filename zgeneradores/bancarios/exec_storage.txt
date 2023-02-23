@@ -1,0 +1,91 @@
+php artisan infyom:api_scaffold storage --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_storage.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback storage scaffold
+
+php artisan infyom:rollback storage api
+
+php artisan infyom:rollback storage api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold storage --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_storage.json"
+
+Migration created:
+2018_07_28_034814_create_storages_table.php
+
+Model created:
+storage.php
+
+Repository created:
+storageRepository.php
+
+Create Request created:
+CreatestorageAPIRequest.php
+
+Update Request created:
+UpdatestorageAPIRequest.php
+
+API Controller created:
+storageAPIController.php
+
+storages api routes added.
+
+RepositoryTest created:
+storageRepositoryTest.php
+
+TestTrait created:
+MakestorageTrait.php
+
+ApiTest created:
+storageApiTest.php
+
+Create Request created:
+CreatestorageRequest.php
+
+Update Request created:
+UpdatestorageRequest.php
+
+DataTable created:
+storageDataTable.php
+
+Controller created:
+storageController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+storages routes added.
+
+storages menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_034814_create_storages_table
+Migrated:  2018_07_28_034814_create_storages_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

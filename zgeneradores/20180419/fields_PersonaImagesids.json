@@ -1,0 +1,74 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false	
+},
+{
+    "name": "persona_id",
+      "dbType": "integer:unsigned:default,0:foreign,personas,id",
+    "htmlType": "text",
+    "relation": "mt1,persona,persona_id,id"   
+}, 
+{
+    "name": "link",
+    "dbType": "text,250",
+    "htmlType": "textarea",
+    "validations": "required|max:250|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "filename",
+    "dbType": "string,150",
+    "htmlType": "text",
+    "validations": "required|max:150|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "activ",
+    "dbType": "integer,false,true",
+    "htmlType": "checkbox",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},  
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]                      

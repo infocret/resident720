@@ -1,0 +1,91 @@
+php artisan infyom:api_scaffold checkbook --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_checkbook.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback checkbook scaffold
+
+php artisan infyom:rollback checkbook api
+
+php artisan infyom:rollback checkbook api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold checkbook --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_checkbook.json"
+
+Migration created:
+2018_07_26_230142_create_checkbooks_table.php
+
+Model created:
+checkbook.php
+
+Repository created:
+checkbookRepository.php
+
+Create Request created:
+CreatecheckbookAPIRequest.php
+
+Update Request created:
+UpdatecheckbookAPIRequest.php
+
+API Controller created:
+checkbookAPIController.php
+
+checkbooks api routes added.
+
+RepositoryTest created:
+checkbookRepositoryTest.php
+
+TestTrait created:
+MakecheckbookTrait.php
+
+ApiTest created:
+checkbookApiTest.php
+
+Create Request created:
+CreatecheckbookRequest.php
+
+Update Request created:
+UpdatecheckbookRequest.php
+
+DataTable created:
+checkbookDataTable.php
+
+Controller created:
+checkbookController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+checkbooks routes added.
+
+checkbooks menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_26_230142_create_checkbooks_table
+Migrated:  2018_07_26_230142_create_checkbooks_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

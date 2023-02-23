@@ -1,0 +1,47 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "reltipo_id",
+    "dbType": "integer:unsigned:default,0:foreign,persona_inmueble_reltipos,id",
+    "htmlType": "text",
+    "relation": "mt1,PersonaInmuebleReltipo,reltipo_id,id"   
+}, 
+{
+    "name": "doctype_id",
+    "dbType": "integer:unsigned:default,0:foreign,doc_types,id",
+    "htmlType": "text",
+    "relation": "mt1,DocType,doctype_id,id"   
+},
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]                      

@@ -1,0 +1,24 @@
+====================******* Comando Generador desde archivo .json *********=========================================
+
+=========================================================================================================================================
+
+**** USAR ESTA PLANTILLA para ejecutar la creacion de codigo, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+
+sustituir <PersInmuReltipoReqDoc >   por el nombre de la tabla en base de datos pero en singular !!!
+
+OJO !!! 
+
+Si la tabla en DB es:  palabra_otrapalabras (palabras en minusculas con guion bajo "_" en medio y en plural)
+en la instruccion debe ser:  PalablaOtrapalabra (Nombres juntos capitalizados en singular sin la "s" final)
+
+sustituir <fields_PersInmuReltipoReqDoc > por el nombre del archivo que tiene la definicion de campos
+
+php artisan infyom:scaffold PersInmuReltipoReqDoc   --fieldsFile="C:\laragon\www\testc1\zgeneradores\pers_inmu_reltipo_req_docs.json"
+
+
+**** USAR ESTA PLANTILLA para realizar un rollback, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+php artisan infyom:rollback PersInmuReltipoReqDoc  scaffold
+php artisan infyom:rollback PersInmuReltipoReqDoc  api
+php artisan infyom:rollback PersInmuReltipoReqDoc  api_scaffold

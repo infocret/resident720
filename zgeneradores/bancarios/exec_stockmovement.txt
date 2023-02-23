@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold stockmovement --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_stockmovement.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback stockmovement scaffold
+
+php artisan infyom:rollback stockmovement api
+
+php artisan infyom:rollback stockmovement api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold stockmovement --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_stockmovement.json"
+
+Migration created:
+2018_07_28_042340_create_stockmovements_table.php
+
+Model created:
+stockmovement.php
+
+Repository created:
+stockmovementRepository.php
+
+Create Request created:
+CreatestockmovementAPIRequest.php
+
+Update Request created:
+UpdatestockmovementAPIRequest.php
+
+API Controller created:
+stockmovementAPIController.php
+
+stockmovements api routes added.
+
+RepositoryTest created:
+stockmovementRepositoryTest.php
+
+TestTrait created:
+MakestockmovementTrait.php
+
+ApiTest created:
+stockmovementApiTest.php
+
+Create Request created:
+CreatestockmovementRequest.php
+
+Update Request created:
+UpdatestockmovementRequest.php
+
+DataTable created:
+stockmovementDataTable.php
+
+Controller created:
+stockmovementController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+stockmovements routes added.
+
+stockmovements menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_042340_create_stockmovements_table
+Migrated:  2018_07_28_042340_create_stockmovements_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

@@ -1,0 +1,87 @@
+php artisan infyom:api_scaffold catmovto --paginate=10 --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_catmovto.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback catmovto scaffold
+
+php artisan infyom:rollback catmovto api
+
+php artisan infyom:rollback catmovto api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold catmovto --paginate=10 --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_catmovto.json"
+
+
+Migration created:
+2019_09_02_062213_create_catmovtos_table.php
+
+Model created:
+catmovto.php
+
+Repository created:
+catmovtoRepository.php
+
+Create Request created:
+CreatecatmovtoAPIRequest.php
+
+Update Request created:
+UpdatecatmovtoAPIRequest.php
+
+API Controller created:
+catmovtoAPIController.php
+
+catmovtos api routes added.
+
+RepositoryTest created:
+catmovtoRepositoryTest.php
+
+TestTrait created:
+MakecatmovtoTrait.php
+
+ApiTest created:
+catmovtoApiTest.php
+
+Create Request created:
+CreatecatmovtoRequest.php
+
+Update Request created:
+UpdatecatmovtoRequest.php
+
+Controller created:
+catmovtoController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+catmovtos routes added.
+
+catmovtos menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > n
+
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

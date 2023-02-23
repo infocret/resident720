@@ -1,0 +1,9 @@
+Contiene las imagenesde identificacion de las entidades Personas
+
+La imagen default es personaid.png
+
+El nombre de los archivo subidos se genera con 
+
+Apellidos + primer nombre + fecha(YYMMDD)+ (HHMMSS)
+
+

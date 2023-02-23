@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold activitytracking --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_activitytracking.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback activitytracking scaffold
+
+php artisan infyom:rollback activitytracking api
+
+php artisan infyom:rollback activitytracking api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold activitytracking --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_activitytracking.json"
+
+Migration created:
+2018_07_27_062259_create_activitytrackings_table.php
+
+Model created:
+activitytracking.php
+
+Repository created:
+activitytrackingRepository.php
+
+Create Request created:
+CreateactivitytrackingAPIRequest.php
+
+Update Request created:
+UpdateactivitytrackingAPIRequest.php
+
+API Controller created:
+activitytrackingAPIController.php
+
+activitytrackings api routes added.
+
+RepositoryTest created:
+activitytrackingRepositoryTest.php
+
+TestTrait created:
+MakeactivitytrackingTrait.php
+
+ApiTest created:
+activitytrackingApiTest.php
+
+Create Request created:
+CreateactivitytrackingRequest.php
+
+Update Request created:
+UpdateactivitytrackingRequest.php
+
+DataTable created:
+activitytrackingDataTable.php
+
+Controller created:
+activitytrackingController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+activitytrackings routes added.
+
+activitytrackings menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_27_062259_create_activitytrackings_table
+Migrated:  2018_07_27_062259_create_activitytrackings_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

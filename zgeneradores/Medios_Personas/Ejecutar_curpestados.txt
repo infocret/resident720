@@ -1,0 +1,51 @@
+php artisan infyom:rollback curpestados scaffold
+php artisan infyom:rollback curpestados api
+php artisan infyom:rollback curpestados api_scaffold
+
+
+php artisan infyom:scaffold curpestados --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_curpestados.json"
+
+
+C:\laragon\www\testc1 (master)
+λ php artisan infyom:scaffold curpestados --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_curpestados.json"
+
+Migration created:
+2018_04_04_003411_create_curpestados_table.php
+
+Model created:
+curpestados.php
+
+Repository created:
+curpestadosRepository.php
+
+Create Request created:
+CreatecurpestadosRequest.php
+
+Update Request created:
+UpdatecurpestadosRequest.php
+
+Controller created:
+curpestadosController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+curpestados routes added.
+
+curpestados menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_04_04_003411_create_curpestados_table
+Migrated:  2018_04_04_003411_create_curpestados_table
+Generating autoload files
+

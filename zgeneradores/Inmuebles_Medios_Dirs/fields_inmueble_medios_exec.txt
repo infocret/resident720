@@ -1,0 +1,70 @@
+====================******* Comando Generador desde archivo .json *********=========================================
+
+=========================================================================================================================================
+
+**** USAR ESTA PLANTILLA para ejecutar la creacion de codigo, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+
+sustituir <InmuebleMedio >   por el nombre de la tabla en base de datos pero en singular !!!
+
+OJO !!! 
+
+Si la tabla en DB es:  palabra_otrapalabras (palabras en minusculas con guion bajo "_" en medio y en plural)
+en la instruccion debe ser:  PalablaOtrapalabra (Nombres juntos capitalizados en singular sin la "s" final)
+
+sustituir <fields_DocType > por el nombre del archivo que tiene la definicion de campos
+
+php artisan infyom:scaffold InmuebleMedio --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_Inmueble_Medios.json"
+
+ 
+**** USAR ESTA PLANTILLA para realizar un rollback, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+php artisan infyom:rollback InmuebleMedio  scaffold
+php artisan infyom:rollback InmuebleMedio  api
+php artisan infyom:rollback InmuebleMedio  api_scaffold
+
+
+==========================================================================================
+
+C:\laragon\www\testc1 (master)
+λ php artisan infyom:scaffold InmuebleMedio --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_Inmueble_Medios.json"
+
+Migration created:
+2018_05_02_224526_create_inmueble_medios_table.php
+
+Model created:
+InmuebleMedio.php
+
+Repository created:
+InmuebleMedioRepository.php
+
+Create Request created:
+CreateInmuebleMedioRequest.php
+
+Update Request created:
+UpdateInmuebleMedioRequest.php
+
+Controller created:
+InmuebleMedioController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+inmuebleMedios routes added.
+
+inmuebleMedios menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_05_02_224526_create_inmueble_medios_table
+Migrated:  2018_05_02_224526_create_inmueble_medios_table
+Generating autoload files

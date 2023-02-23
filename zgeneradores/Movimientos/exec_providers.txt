@@ -1,0 +1,87 @@
+php artisan infyom:api_scaffold providers --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_providers.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback providers scaffold
+
+php artisan infyom:rollback providers api
+
+php artisan infyom:rollback providers api_scaffold
+
+
+***************************************************************
+
+                                                                                                                                       
+C:\laragon\www\testc1 (master)                                                                                                         
+? php artisan infyom:api_scaffold providers --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_providers.json"                    
+                                                                                                                                       
+Migration created:                                                                                                                     
+2018_05_24_024857_create_providers_table.php                                                                                           
+                                                                                                                                       
+Model created:                                                                                                                         
+providers.php                                                                                                                          
+                                                                                                                                       
+Repository created:                                                                                                                    
+providersRepository.php                                                                                                                
+                                                                                                                                       
+Create Request created:                                                                                                                
+CreateprovidersAPIRequest.php                                                                                                          
+                                                                                                                                       
+Update Request created:                                                                                                                
+UpdateprovidersAPIRequest.php                                                                                                          
+                                                                                                                                       
+API Controller created:                                                                                                                
+providersAPIController.php                                                                                                             
+                                                                                                                                       
+providers api routes added.                                                                                                            
+                                                                                                                                       
+RepositoryTest created:                                                                                                                
+providersRepositoryTest.php                                                                                                            
+                                                                                                                                       
+TestTrait created:                                                                                                                     
+MakeprovidersTrait.php                                                                                                                 
+                                                                                                                                       
+ApiTest created:                                                                                                                       
+providersApiTest.php                                                                                                                   
+                                                                                                                                       
+Create Request created:                                                                                                                
+CreateprovidersRequest.php                                                                                                             
+                                                                                                                                       
+Update Request created:                                                                                                                
+UpdateprovidersRequest.php                                                                                                             
+                                                                                                                                       
+Controller created:                                                                                                                    
+providersController.php                                                                                                                
+                                                                                                                                       
+Generating Views...                                                                                                                    
+table.blade.php created                                                                                                                
+index.blade.php created                                                                                                                
+field.blade.php created                                                                                                                
+create.blade.php created                                                                                                               
+edit.blade.php created                                                                                                                 
+show_fields.blade.php created                                                                                                          
+show.blade.php created                                                                                                                 
+Views created:                                                                                                                         
+                                                                                                                                       
+providers routes added.                                                                                                                
+                                                                                                                                       
+providers menu added.                                                                                                                  
+                                                                                                                                       
+                                                                                                                                       
+Do you want to migrate database? [y|N] (yes/no) [no]:                                                                                  
+ > y                                                                                                                                   
+                                                                                                                                       
+Migrating: 2018_05_24_024857_create_providers_table                                                                                    
+Migrated:  2018_05_24_024857_create_providers_table                                                                                    
+Generating autoload files                                                                                                              
+                                                                                                                                       
+C:\laragon\www\testc1 (master)                                                                                                         
+?                                                                                                                                      
+                                                                                                                                       
+                                                                                                                                       

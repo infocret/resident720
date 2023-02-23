@@ -1,0 +1,140 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false	
+},
+{
+    "name": "name",
+    "dbType": "string,25",
+    "htmlType": "text",
+    "validations": "required|max:25",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "appat",
+    "dbType": "string,25",
+    "htmlType": "text",
+    "validations": "required|max:25",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},  
+{
+    "name": "apmat",
+    "dbType": "string,25",
+    "htmlType": "text",
+    "validations": "required|max:25",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},  
+{
+    "name": "lugarnac",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "validations": "required|min:3|max:50",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "datebirth",
+    "dbType": "dateTime",
+    "htmlType": "date",
+    "validations": "required",
+    "searchable": true
+},
+{ 
+    "name": "genero",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "validations": "required|min:5|max:10",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "rfc",
+    "dbType": "string,13",
+    "htmlType": "text",
+    "validations": "required|max:13",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "curp",
+    "dbType": "string,18",
+    "htmlType": "text",
+    "validations": "required|max:18",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "nss",
+    "dbType": "string,11",
+    "htmlType": "text",
+    "validations": "required|max:11",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},  
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}, 
+{
+    "name": "persona_id",    
+    "type": "relation",
+    "relation": "1tm,MedioPersona,persona_id,id"
+} , 
+{
+    "name": "persona_id",    
+    "type": "relation",
+    "relation": "1tm,PersonaDir,persona_id,id"
+}  
+]                      

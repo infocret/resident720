@@ -1,0 +1,91 @@
+php artisan infyom:api_scaffold checkbooktracking --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_checkbooktracking.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback checkbooktracking scaffold
+
+php artisan infyom:rollback checkbooktracking api
+
+php artisan infyom:rollback checkbooktracking api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold checkbooktracking --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_checkbooktracking.json"
+
+
+
+Migration created:
+2020_03_27_021001_create_checkbooktrackings_table.php
+
+Model created:
+checkbooktracking.php
+
+Repository created:
+checkbooktrackingRepository.php
+
+Create Request created:
+CreatecheckbooktrackingAPIRequest.php
+
+Update Request created:
+UpdatecheckbooktrackingAPIRequest.php
+
+API Controller created:
+checkbooktrackingAPIController.php
+
+checkbooktrackings api routes added.
+
+RepositoryTest created:
+checkbooktrackingRepositoryTest.php
+
+TestTrait created:
+MakecheckbooktrackingTrait.php
+
+ApiTest created:
+checkbooktrackingApiTest.php
+
+Create Request created:
+CreatecheckbooktrackingRequest.php
+
+Update Request created:
+UpdatecheckbooktrackingRequest.php
+
+Controller created:
+checkbooktrackingController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+checkbooktrackings routes added.
+
+checkbooktrackings menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2020_03_27_021001_create_checkbooktrackings_table
+Migrated:  2020_03_27_021001_create_checkbooktrackings_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

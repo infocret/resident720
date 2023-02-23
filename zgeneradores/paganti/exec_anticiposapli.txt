@@ -1,0 +1,21 @@
+php artisan infyom:api_scaffold anticiposapli  --paginate=10 --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_anticiposapli.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback anticiposapli scaffold
+
+php artisan infyom:rollback anticiposapli api
+
+php artisan infyom:rollback anticiposapli api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 

@@ -1,0 +1,163 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "persona_id",
+      "dbType": "integer:unsigned:default,0:foreign,personas,id",
+    "htmlType": "text",
+    "relation": "mt1,persona,persona_id,id"   
+}, 
+{
+     "name": "location_id",
+      "dbType": "integer:unsigned:default,0:foreign,locations,id",
+    "htmlType": "text",
+    "relation": "mt1,location,location_id,id"   
+},
+{
+    "name": "codpo_id",
+    "dbType": "integer:unsigned:default,0:foreign,cod_pos,id",
+    "htmlType": "text",
+    "relation": "mt1,CodPo,codpo_id,id"  
+},
+{
+    "name": "pais",
+    "dbType": "string,40",
+    "htmlType": "text",
+    "validations": "required|max:40",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "calle",
+    "dbType": "string,150",
+    "htmlType": "text",
+    "validations": "required|max:150",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},     
+{
+    "name": "numExt",
+    "dbType": "string,8",
+    "htmlType": "text",
+    "validations": "required|max:8",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "piso",
+    "dbType": "string,8",
+    "htmlType": "text",
+    "validations": "required|max:8",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "numInt",
+    "dbType": "string,8",
+    "htmlType": "text",
+    "validations": "required|max:8",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "referencia1",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "validations": "required|max:100",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "referencia2",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "validations": "required|max:100",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "linkmapa",
+    "dbType": "string,300",
+    "htmlType": "text",
+    "validations": "required|max:300",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "imagenMapa",
+    "dbType": "string,150",
+    "htmlType": "text",
+    "validations": "required|max:150",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "observaciones",
+    "dbType": "string,150",
+    "htmlType": "text",
+    "validations": "required|max:150",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}              
+]                      

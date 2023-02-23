@@ -1,0 +1,18 @@
+php artisan infyom:api_scaffold movimientoTipo --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_movimientoTipos.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback movimientoTipo scaffold
+
+php artisan infyom:rollback movimientoTipo api
+
+php artisan infyom:rollback movimientoTipo api_scaffold
+
+
+============================================================================================

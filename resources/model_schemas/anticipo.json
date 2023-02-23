@@ -1,0 +1,201 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "condom_id",
+        "dbType": "integer:unsigned:default,0:foreign,inmuebles,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "unid_id",
+        "dbType": "integer:unsigned:default,0:foreign,inmuebles,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "conceptserv_id",
+        "dbType": "integer:unsigned:default,0:foreign,conceptservices,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "fechareg",
+        "dbType": "dateTime",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "folio",
+        "dbType": "string,35",
+        "htmlType": "text",
+        "validations": "required|max:35|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "cobertura",
+        "dbType": "string,150",
+        "htmlType": "text",
+        "validations": "required|max:150|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "montoini",
+        "dbType": "decimal,19,4",
+        "htmlType": "number",
+        "validations": "required|max:9999999|min:0",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "saldo",
+        "dbType": "decimal,19,4",
+        "htmlType": "number",
+        "validations": "required|max:9999999|min:0",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "status",
+        "dbType": "string,15",
+        "htmlType": "text",
+        "validations": "required|max:15|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "desc",
+        "dbType": "string,150",
+        "htmlType": "text",
+        "validations": "required|max:150|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "observ",
+        "dbType": "string,250",
+        "htmlType": "text",
+        "validations": "required|max:250|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "docto",
+        "dbType": "string,150",
+        "htmlType": "text",
+        "validations": "required|max:150|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "filelink",
+        "dbType": "string,250",
+        "htmlType": "text",
+        "validations": "required|max:250|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "userreg",
+        "dbType": "string,150",
+        "htmlType": "text",
+        "validations": "required|max:150|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,inmueble,inmu_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,inmueble,inmu_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,conceptservice,conceptserv_id,id"
+    }
+]

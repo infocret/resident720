@@ -1,0 +1,21 @@
+php artisan infyom:api_scaffold event --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_event.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback event scaffold
+
+php artisan infyom:rollback event api
+
+php artisan infyom:rollback event api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 

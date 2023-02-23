@@ -1,0 +1,358 @@
+C:\laragon\www\Kali (master)
+λ php artisan route:list
++--------+-----------+-------------------------------------------------------+---------------------------------+------------------------------------------------------------------------+--------------+
+| Domain | Method    | URI                                                   | Name                            | Action
+                | Middleware   |
++--------+-----------+-------------------------------------------------------+---------------------------------+------------------------------------------------------------------------+--------------+
+|        | GET|HEAD  | /                                                     |                                 | Closure
+                | web          |
+|        | GET|HEAD  | addimgid/{personaid}                                  | personaImagesids.add            | App\Http\Controllers\PersonaImagesidsController@uploadForm             | web          |
+|        | GET|HEAD  | algo                                                  |                                 | Closure
+                | web          |
+|        | POST      | api/countries                                         | api.countries.store             | App\Http\Controllers\API\countriesAPIController@store
+                | api          |
+|        | GET|HEAD  | api/countries                                         | api.countries.index             | App\Http\Controllers\API\countriesAPIController@index
+                | api          |
+|        | GET|HEAD  | api/countries/create                                  | api.countries.create            | App\Http\Controllers\API\countriesAPIController@create
+                | api          |
+|        | GET|HEAD  | api/countries/{country}                               | api.countries.show              | App\Http\Controllers\API\countriesAPIController@show
+                | api          |
+|        | PUT|PATCH | api/countries/{country}                               | api.countries.update            | App\Http\Controllers\API\countriesAPIController@update
+                | api          |
+|        | DELETE    | api/countries/{country}                               | api.countries.destroy           | App\Http\Controllers\API\countriesAPIController@destroy
+                | api          |
+|        | GET|HEAD  | api/countries/{country}/edit                          | api.countries.edit              | App\Http\Controllers\API\countriesAPIController@edit
+                | api          |
+|        | GET|HEAD  | api/inmueble_tipos                                    | api.inmueble_tipos.index        | App\Http\Controllers\API\InmuebleTipoAPIController@index               | api          |
+|        | POST      | api/inmueble_tipos                                    | api.inmueble_tipos.store        | App\Http\Controllers\API\InmuebleTipoAPIController@store               | api          |
+|        | GET|HEAD  | api/inmueble_tipos/create                             | api.inmueble_tipos.create       | App\Http\Controllers\API\InmuebleTipoAPIController@create              | api          |
+|        | GET|HEAD  | api/inmueble_tipos/{inmueble_tipo}                    | api.inmueble_tipos.show         | App\Http\Controllers\API\InmuebleTipoAPIController@show
+                | api          |
+|        | PUT|PATCH | api/inmueble_tipos/{inmueble_tipo}                    | api.inmueble_tipos.update       | App\Http\Controllers\API\InmuebleTipoAPIController@update              | api          |
+|        | DELETE    | api/inmueble_tipos/{inmueble_tipo}                    | api.inmueble_tipos.destroy      | App\Http\Controllers\API\InmuebleTipoAPIController@destroy             | api          |
+|        | GET|HEAD  | api/inmueble_tipos/{inmueble_tipo}/edit               | api.inmueble_tipos.edit         | App\Http\Controllers\API\InmuebleTipoAPIController@edit
+                | api          |
+|        | GET|HEAD  | api/user                                              | api.                            | Closure
+                | api,auth:api |
+|        | GET|HEAD  | asentamientos/{municipio}                             |                                 | App\Http\Controllers\CodPoController@getAsentamientos
+                | web          |
+|        | GET|HEAD  | ciudades/{estado}                                     |                                 | App\Http\Controllers\CodPoController@getCiudades
+                | web          |
+|        | POST      | codPos                                                | codPos.store                    | App\Http\Controllers\CodPoController@store
+                | web          |
+|        | GET|HEAD  | codPos                                                | codPos.index                    | App\Http\Controllers\CodPoController@index
+                | web          |
+|        | GET|HEAD  | codPos/create                                         | codPos.create                   | App\Http\Controllers\CodPoController@create
+                | web          |
+|        | GET|HEAD  | codPos/{codPo}                                        | codPos.show                     | App\Http\Controllers\CodPoController@show
+                | web          |
+|        | PUT|PATCH | codPos/{codPo}                                        | codPos.update                   | App\Http\Controllers\CodPoController@update
+                | web          |
+|        | DELETE    | codPos/{codPo}                                        | codPos.destroy                  | App\Http\Controllers\CodPoController@destroy
+                | web          |
+|        | GET|HEAD  | codPos/{codPo}/edit                                   | codPos.edit                     | App\Http\Controllers\CodPoController@edit
+                | web          |
+|        | GET|HEAD  | countries                                             | countries.index                 | App\Http\Controllers\countriesController@index
+                | web          |
+|        | POST      | countries                                             | countries.store                 | App\Http\Controllers\countriesController@store
+                | web          |
+|        | GET|HEAD  | countries/create                                      | countries.create                | App\Http\Controllers\countriesController@create
+                | web          |
+|        | PUT|PATCH | countries/{country}                                   | countries.update                | App\Http\Controllers\countriesController@update
+                | web          |
+|        | DELETE    | countries/{country}                                   | countries.destroy               | App\Http\Controllers\countriesController@destroy
+                | web          |
+|        | GET|HEAD  | countries/{country}                                   | countries.show                  | App\Http\Controllers\countriesController@show
+                | web          |
+|        | GET|HEAD  | countries/{country}/edit                              | countries.edit                  | App\Http\Controllers\countriesController@edit
+                | web          |
+|        | GET|HEAD  | curpestados                                           | curpestados.index               | App\Http\Controllers\curpestadosController@index
+                | web          |
+|        | POST      | curpestados                                           | curpestados.store               | App\Http\Controllers\curpestadosController@store
+                | web          |
+|        | GET|HEAD  | curpestados/create                                    | curpestados.create              | App\Http\Controllers\curpestadosController@create
+                | web          |
+|        | PUT|PATCH | curpestados/{curpestado}                              | curpestados.update              | App\Http\Controllers\curpestadosController@update
+                | web          |
+|        | DELETE    | curpestados/{curpestado}                              | curpestados.destroy             | App\Http\Controllers\curpestadosController@destroy
+                | web          |
+|        | GET|HEAD  | curpestados/{curpestado}                              | curpestados.show                | App\Http\Controllers\curpestadosController@show
+                | web          |
+|        | GET|HEAD  | curpestados/{curpestado}/edit                         | curpestados.edit                | App\Http\Controllers\curpestadosController@edit
+                | web          |
+|        | GET|HEAD  | dashboard                                             |                                 | Closure
+                | web          |
+|        | GET|HEAD  | delimgid/{filename}                                   | personaImagesids.delimgid       | App\Http\Controllers\PersonaImagesidsController@delfileimgid           | web          |
+|        | GET|HEAD  | docTypes                                              | docTypes.index                  | App\Http\Controllers\DocTypeController@index
+                | web          |
+|        | POST      | docTypes                                              | docTypes.store                  | App\Http\Controllers\DocTypeController@store
+                | web          |
+|        | GET|HEAD  | docTypes/create                                       | docTypes.create                 | App\Http\Controllers\DocTypeController@create
+                | web          |
+|        | PUT|PATCH | docTypes/{docType}                                    | docTypes.update                 | App\Http\Controllers\DocTypeController@update
+                | web          |
+|        | DELETE    | docTypes/{docType}                                    | docTypes.destroy                | App\Http\Controllers\DocTypeController@destroy
+                | web          |
+|        | GET|HEAD  | docTypes/{docType}                                    | docTypes.show                   | App\Http\Controllers\DocTypeController@show
+                | web          |
+|        | GET|HEAD  | docTypes/{docType}/edit                               | docTypes.edit                   | App\Http\Controllers\DocTypeController@edit
+                | web          |
+|        | GET|HEAD  | estados/{pais}                                        |                                 | App\Http\Controllers\CodPoController@getEstados
+                | web          |
+|        | GET|HEAD  | expclose                                              | personaexp.close                | App\Http\Controllers\personaController@personaexpclose
+                | web          |
+|        | GET|HEAD  | fileTypes                                             | fileTypes.index                 | App\Http\Controllers\FileTypeController@index
+                | web          |
+|        | POST      | fileTypes                                             | fileTypes.store                 | App\Http\Controllers\FileTypeController@store
+                | web          |
+|        | GET|HEAD  | fileTypes/create                                      | fileTypes.create                | App\Http\Controllers\FileTypeController@create
+                | web          |
+|        | DELETE    | fileTypes/{fileType}                                  | fileTypes.destroy               | App\Http\Controllers\FileTypeController@destroy
+                | web          |
+|        | PUT|PATCH | fileTypes/{fileType}                                  | fileTypes.update                | App\Http\Controllers\FileTypeController@update
+                | web          |
+|        | GET|HEAD  | fileTypes/{fileType}                                  | fileTypes.show                  | App\Http\Controllers\FileTypeController@show
+                | web          |
+|        | GET|HEAD  | fileTypes/{fileType}/edit                             | fileTypes.edit                  | App\Http\Controllers\FileTypeController@edit
+                | web          |
+|        | GET|HEAD  | home                                                  | home.index                      | App\Http\Controllers\HomeController@index
+                | web,auth     |
+|        | GET|HEAD  | inmuebleDirs                                          | inmuebleDirs.index              | App\Http\Controllers\InmuebleDirController@index
+                | web          |
+|        | POST      | inmuebleDirs                                          | inmuebleDirs.store              | App\Http\Controllers\InmuebleDirController@store
+                | web          |
+|        | GET|HEAD  | inmuebleDirs/create                                   | inmuebleDirs.create             | App\Http\Controllers\InmuebleDirController@create
+                | web          |
+|        | PUT|PATCH | inmuebleDirs/{inmuebleDir}                            | inmuebleDirs.update             | App\Http\Controllers\InmuebleDirController@update
+                | web          |
+|        | DELETE    | inmuebleDirs/{inmuebleDir}                            | inmuebleDirs.destroy            | App\Http\Controllers\InmuebleDirController@destroy
+                | web          |
+|        | GET|HEAD  | inmuebleDirs/{inmuebleDir}                            | inmuebleDirs.show               | App\Http\Controllers\InmuebleDirController@show
+                | web          |
+|        | GET|HEAD  | inmuebleDirs/{inmuebleDir}/edit                       | inmuebleDirs.edit               | App\Http\Controllers\InmuebleDirController@edit
+                | web          |
+|        | GET|HEAD  | inmuebleMedios                                        | inmuebleMedios.index            | App\Http\Controllers\InmuebleMedioController@index
+                | web          |
+|        | POST      | inmuebleMedios                                        | inmuebleMedios.store            | App\Http\Controllers\InmuebleMedioController@store
+                | web          |
+|        | GET|HEAD  | inmuebleMedios/create                                 | inmuebleMedios.create           | App\Http\Controllers\InmuebleMedioController@create
+                | web          |
+|        | PUT|PATCH | inmuebleMedios/{inmuebleMedio}                        | inmuebleMedios.update           | App\Http\Controllers\InmuebleMedioController@update
+                | web          |
+|        | DELETE    | inmuebleMedios/{inmuebleMedio}                        | inmuebleMedios.destroy          | App\Http\Controllers\InmuebleMedioController@destroy
+                | web          |
+|        | GET|HEAD  | inmuebleMedios/{inmuebleMedio}                        | inmuebleMedios.show             | App\Http\Controllers\InmuebleMedioController@show
+                | web          |
+|        | GET|HEAD  | inmuebleMedios/{inmuebleMedio}/edit                   | inmuebleMedios.edit             | App\Http\Controllers\InmuebleMedioController@edit
+                | web          |
+|        | GET|HEAD  | inmuebleTipos                                         | inmuebleTipos.index             | App\Http\Controllers\InmuebleTipoController@index
+                | web          |
+|        | POST      | inmuebleTipos                                         | inmuebleTipos.store             | App\Http\Controllers\InmuebleTipoController@store
+                | web          |
+|        | GET|HEAD  | inmuebleTipos/create                                  | inmuebleTipos.create            | App\Http\Controllers\InmuebleTipoController@create
+                | web          |
+|        | PUT|PATCH | inmuebleTipos/{inmuebleTipo}                          | inmuebleTipos.update            | App\Http\Controllers\InmuebleTipoController@update
+                | web          |
+|        | DELETE    | inmuebleTipos/{inmuebleTipo}                          | inmuebleTipos.destroy           | App\Http\Controllers\InmuebleTipoController@destroy
+                | web          |
+|        | GET|HEAD  | inmuebleTipos/{inmuebleTipo}                          | inmuebleTipos.show              | App\Http\Controllers\InmuebleTipoController@show
+                | web          |
+|        | GET|HEAD  | inmuebleTipos/{inmuebleTipo}/edit                     | inmuebleTipos.edit              | App\Http\Controllers\InmuebleTipoController@edit
+                | web          |
+|        | GET|HEAD  | inmuebles                                             | inmuebles.index                 | App\Http\Controllers\inmuebleController@index
+                | web          |
+|        | POST      | inmuebles                                             | inmuebles.store                 | App\Http\Controllers\inmuebleController@store
+                | web          |
+|        | GET|HEAD  | inmuebles/create                                      | inmuebles.create                | App\Http\Controllers\inmuebleController@create
+                | web          |
+|        | PUT|PATCH | inmuebles/{inmueble}                                  | inmuebles.update                | App\Http\Controllers\inmuebleController@update
+                | web          |
+|        | GET|HEAD  | inmuebles/{inmueble}                                  | inmuebles.show                  | App\Http\Controllers\inmuebleController@show
+                | web          |
+|        | DELETE    | inmuebles/{inmueble}                                  | inmuebles.destroy               | App\Http\Controllers\inmuebleController@destroy
+                | web          |
+|        | GET|HEAD  | inmuebles/{inmueble}/edit                             | inmuebles.edit                  | App\Http\Controllers\inmuebleController@edit
+                | web          |
+|        | GET|HEAD  | listadoc/{trel}                                       |                                 | App\Http\Controllers\PersInmuReltipoReqDocController@getTdocs          | web          |
+|        | POST      | locations                                             | locations.store                 | App\Http\Controllers\locationController@store
+                | web          |
+|        | GET|HEAD  | locations                                             | locations.index                 | App\Http\Controllers\locationController@index
+                | web          |
+|        | GET|HEAD  | locations/create                                      | locations.create                | App\Http\Controllers\locationController@create
+                | web          |
+|        | DELETE    | locations/{location}                                  | locations.destroy               | App\Http\Controllers\locationController@destroy
+                | web          |
+|        | PUT|PATCH | locations/{location}                                  | locations.update                | App\Http\Controllers\locationController@update
+                | web          |
+|        | GET|HEAD  | locations/{location}                                  | locations.show                  | App\Http\Controllers\locationController@show
+                | web          |
+|        | GET|HEAD  | locations/{location}/edit                             | locations.edit                  | App\Http\Controllers\locationController@edit
+                | web          |
+|        | GET|HEAD  | login                                                 | login                           | App\Http\Controllers\Auth\LoginController@showLoginForm
+                | web,guest    |
+|        | POST      | login                                                 |                                 | App\Http\Controllers\Auth\LoginController@login
+                | web,guest    |
+|        | POST      | logout                                                | logout                          | App\Http\Controllers\Auth\LoginController@logout
+                | web          |
+|        | POST      | medioPersonas                                         | medioPersonas.store             | App\Http\Controllers\MedioPersonaController@store
+                | web          |
+|        | GET|HEAD  | medioPersonas                                         | medioPersonas.index             | App\Http\Controllers\MedioPersonaController@index
+                | web          |
+|        | GET|HEAD  | medioPersonas/create                                  | medioPersonas.create            | App\Http\Controllers\MedioPersonaController@create
+                | web          |
+|        | DELETE    | medioPersonas/{medioPersona}                          | medioPersonas.destroy           | App\Http\Controllers\MedioPersonaController@destroy
+                | web          |
+|        | PUT|PATCH | medioPersonas/{medioPersona}                          | medioPersonas.update            | App\Http\Controllers\MedioPersonaController@update
+                | web          |
+|        | GET|HEAD  | medioPersonas/{medioPersona}                          | medioPersonas.show              | App\Http\Controllers\MedioPersonaController@show
+                | web          |
+|        | GET|HEAD  | medioPersonas/{medioPersona}/edit                     | medioPersonas.edit              | App\Http\Controllers\MedioPersonaController@edit
+                | web          |
+|        | POST      | medios                                                | medios.store                    | App\Http\Controllers\medioController@store
+                | web          |
+|        | GET|HEAD  | medios                                                | medios.index                    | App\Http\Controllers\medioController@index
+                | web          |
+|        | GET|HEAD  | medios/create                                         | medios.create                   | App\Http\Controllers\medioController@create
+                | web          |
+|        | DELETE    | medios/{medio}                                        | medios.destroy                  | App\Http\Controllers\medioController@destroy
+                | web          |
+|        | PUT|PATCH | medios/{medio}                                        | medios.update                   | App\Http\Controllers\medioController@update
+                | web          |
+|        | GET|HEAD  | medios/{medio}                                        | medios.show                     | App\Http\Controllers\medioController@show
+                | web          |
+|        | GET|HEAD  | medios/{medio}/edit                                   | medios.edit                     | App\Http\Controllers\medioController@edit
+                | web          |
+|        | GET|HEAD  | municipios/{ciudad}                                   |                                 | App\Http\Controllers\CodPoController@getMunicipios
+                | web          |
+|        | GET|HEAD  | paises/{continente}                                   |                                 | App\Http\Controllers\countriesController@getpaises
+                | web          |
+|        | POST      | password/email                                        | password.email                  | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest    |
+|        | GET|HEAD  | password/reset                                        | password.request                | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest    |
+|        | POST      | password/reset                                        |                                 | App\Http\Controllers\Auth\ResetPasswordController@reset
+                | web,guest    |
+|        | GET|HEAD  | password/reset/{token}                                | password.reset                  | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest    |
+|        | GET|HEAD  | persInmuReltipoReqDocs                                | persInmuReltipoReqDocs.index    | App\Http\Controllers\PersInmuReltipoReqDocController@index             | web          |
+|        | POST      | persInmuReltipoReqDocs                                | persInmuReltipoReqDocs.store    | App\Http\Controllers\PersInmuReltipoReqDocController@store             | web          |
+|        | GET|HEAD  | persInmuReltipoReqDocs/create                         | persInmuReltipoReqDocs.create   | App\Http\Controllers\PersInmuReltipoReqDocController@create            | web          |
+|        | DELETE    | persInmuReltipoReqDocs/{persInmuReltipoReqDoc}        | persInmuReltipoReqDocs.destroy  | App\Http\Controllers\PersInmuReltipoReqDocController@destroy           | web          |
+|        | PUT|PATCH | persInmuReltipoReqDocs/{persInmuReltipoReqDoc}        | persInmuReltipoReqDocs.update   | App\Http\Controllers\PersInmuReltipoReqDocController@update            | web          |
+|        | GET|HEAD  | persInmuReltipoReqDocs/{persInmuReltipoReqDoc}        | persInmuReltipoReqDocs.show     | App\Http\Controllers\PersInmuReltipoReqDocController@show              | web          |
+|        | GET|HEAD  | persInmuReltipoReqDocs/{persInmuReltipoReqDoc}/edit   | persInmuReltipoReqDocs.edit     | App\Http\Controllers\PersInmuReltipoReqDocController@edit              | web          |
+|        | POST      | personaDirs                                           | personaDirs.store               | App\Http\Controllers\PersonaDirController@store
+                | web          |
+|        | GET|HEAD  | personaDirs                                           | personaDirs.index               | App\Http\Controllers\PersonaDirController@index
+                | web          |
+|        | GET|HEAD  | personaDirs/create                                    | personaDirs.create              | App\Http\Controllers\PersonaDirController@create
+                | web          |
+|        | DELETE    | personaDirs/{personaDir}                              | personaDirs.destroy             | App\Http\Controllers\PersonaDirController@destroy
+                | web          |
+|        | PUT|PATCH | personaDirs/{personaDir}                              | personaDirs.update              | App\Http\Controllers\PersonaDirController@update
+                | web          |
+|        | GET|HEAD  | personaDirs/{personaDir}                              | personaDirs.show                | App\Http\Controllers\PersonaDirController@show
+                | web          |
+|        | GET|HEAD  | personaDirs/{personaDir}/edit                         | personaDirs.edit                | App\Http\Controllers\PersonaDirController@edit
+                | web          |
+|        | POST      | personaDocuments                                      | personaDocuments.store          | App\Http\Controllers\PersonaDocumentController@store
+                | web          |
+|        | GET|HEAD  | personaDocuments                                      | personaDocuments.index          | App\Http\Controllers\PersonaDocumentController@index
+                | web          |
+|        | GET|HEAD  | personaDocuments/create                               | personaDocuments.create         | App\Http\Controllers\PersonaDocumentController@create
+                | web          |
+|        | GET|HEAD  | personaDocuments/{personaDocument}                    | personaDocuments.show           | App\Http\Controllers\PersonaDocumentController@show
+                | web          |
+|        | DELETE    | personaDocuments/{personaDocument}                    | personaDocuments.destroy        | App\Http\Controllers\PersonaDocumentController@destroy
+                | web          |
+|        | PUT|PATCH | personaDocuments/{personaDocument}                    | personaDocuments.update         | App\Http\Controllers\PersonaDocumentController@update
+                | web          |
+|        | GET|HEAD  | personaDocuments/{personaDocument}/edit               | personaDocuments.edit           | App\Http\Controllers\PersonaDocumentController@edit
+                | web          |
+|        | POST      | personaImagesids                                      | personaImagesids.store          | App\Http\Controllers\PersonaImagesidsController@store
+                | web          |
+|        | GET|HEAD  | personaImagesids                                      | personaImagesids.index          | App\Http\Controllers\PersonaImagesidsController@index
+                | web          |
+|        | GET|HEAD  | personaImagesids/create                               | personaImagesids.create         | App\Http\Controllers\PersonaImagesidsController@create
+                | web          |
+|        | DELETE    | personaImagesids/{personaImagesid}                    | personaImagesids.destroy        | App\Http\Controllers\PersonaImagesidsController@destroy
+                | web          |
+|        | GET|HEAD  | personaImagesids/{personaImagesid}                    | personaImagesids.show           | App\Http\Controllers\PersonaImagesidsController@show
+                | web          |
+|        | PUT|PATCH | personaImagesids/{personaImagesid}                    | personaImagesids.update         | App\Http\Controllers\PersonaImagesidsController@update
+                | web          |
+|        | GET|HEAD  | personaImagesids/{personaImagesid}/edit               | personaImagesids.edit           | App\Http\Controllers\PersonaImagesidsController@edit
+                | web          |
+|        | POST      | personaInmuebleReltipos                               | personaInmuebleReltipos.store   | App\Http\Controllers\PersonaInmuebleReltipoController@store            | web          |
+|        | GET|HEAD  | personaInmuebleReltipos                               | personaInmuebleReltipos.index   | App\Http\Controllers\PersonaInmuebleReltipoController@index            | web          |
+|        | GET|HEAD  | personaInmuebleReltipos/create                        | personaInmuebleReltipos.create  | App\Http\Controllers\PersonaInmuebleReltipoController@create           | web          |
+|        | DELETE    | personaInmuebleReltipos/{personaInmuebleReltipo}      | personaInmuebleReltipos.destroy | App\Http\Controllers\PersonaInmuebleReltipoController@destroy          | web          |
+|        | PUT|PATCH | personaInmuebleReltipos/{personaInmuebleReltipo}      | personaInmuebleReltipos.update  | App\Http\Controllers\PersonaInmuebleReltipoController@update           | web          |
+|        | GET|HEAD  | personaInmuebleReltipos/{personaInmuebleReltipo}      | personaInmuebleReltipos.show    | App\Http\Controllers\PersonaInmuebleReltipoController@show             | web          |
+|        | GET|HEAD  | personaInmuebleReltipos/{personaInmuebleReltipo}/edit | personaInmuebleReltipos.edit    | App\Http\Controllers\PersonaInmuebleReltipoController@edit             | web          |
+|        | POST      | personaInmuebles                                      | personaInmuebles.store          | App\Http\Controllers\PersonaInmuebleController@store
+                | web          |
+|        | GET|HEAD  | personaInmuebles                                      | personaInmuebles.index          | App\Http\Controllers\PersonaInmuebleController@index
+                | web          |
+|        | GET|HEAD  | personaInmuebles/create                               | personaInmuebles.create         | App\Http\Controllers\PersonaInmuebleController@create
+                | web          |
+|        | GET|HEAD  | personaInmuebles/{personaInmueble}                    | personaInmuebles.show           | App\Http\Controllers\PersonaInmuebleController@show
+                | web          |
+|        | PUT|PATCH | personaInmuebles/{personaInmueble}                    | personaInmuebles.update         | App\Http\Controllers\PersonaInmuebleController@update
+                | web          |
+|        | DELETE    | personaInmuebles/{personaInmueble}                    | personaInmuebles.destroy        | App\Http\Controllers\PersonaInmuebleController@destroy
+                | web          |
+|        | GET|HEAD  | personaInmuebles/{personaInmueble}/edit               | personaInmuebles.edit           | App\Http\Controllers\PersonaInmuebleController@edit
+                | web          |
+|        | GET|HEAD  | personaexp/{personaid}                                | personaexp.index                | App\Http\Controllers\personaController@personaexpindex
+                | web          |
+|        | GET|HEAD  | personamedios                                         | personamedios.index             | App\Http\Controllers\MedioPersonaController@personamediosindex         | web          |
+|        | POST      | personamedios                                         | personamedios.store             | App\Http\Controllers\MedioPersonaController@personamediostore          | web          |
+|        | GET|HEAD  | personamedios/create                                  | personamedios.create            | App\Http\Controllers\MedioPersonaController@personamedioscreate        | web          |
+|        | GET|HEAD  | personamedios/show/{id}                               | personamedios.show              | App\Http\Controllers\MedioPersonaController@personamediosshow          | web          |
+|        | DELETE    | personamedios/{id}                                    | personamedios.destroy           | App\Http\Controllers\MedioPersonaController@personamediodestroy        | web          |
+|        | PATCH     | personamedios/{id}                                    | personamedios.update            | App\Http\Controllers\MedioPersonaController@personamediosupdate        | web          |
+|        | GET|HEAD  | personamedios/{id}/edit                               | personamedios.edit              | App\Http\Controllers\MedioPersonaController@personamediosedit          | web          |
+|        | GET|HEAD  | personas                                              | personas.index                  | App\Http\Controllers\personaController@index
+                | web          |
+|        | POST      | personas                                              | personas.store                  | App\Http\Controllers\personaController@store
+                | web          |
+|        | GET|HEAD  | personas/create                                       | personas.create                 | App\Http\Controllers\personaController@create
+                | web          |
+|        | GET|HEAD  | personas/{persona}                                    | personas.show                   | App\Http\Controllers\personaController@show
+                | web          |
+|        | PUT|PATCH | personas/{persona}                                    | personas.update                 | App\Http\Controllers\personaController@update
+                | web          |
+|        | DELETE    | personas/{persona}                                    | personas.destroy                | App\Http\Controllers\personaController@destroy
+                | web          |
+|        | GET|HEAD  | personas/{persona}/edit                               | personas.edit                   | App\Http\Controllers\personaController@edit
+                | web          |
+|        | POST      | personaubicaciones                                    | personaubicaciones.store        | App\Http\Controllers\PersonaDirController@personaubicacionestore       | web          |
+|        | GET|HEAD  | personaubicaciones                                    | personaubicaciones.index        | App\Http\Controllers\PersonaDirController@personaubicacionesindex      | web          |
+|        | GET|HEAD  | personaubicaciones/create                             | personaubicaciones.create       | App\Http\Controllers\PersonaDirController@personaubicacionescreate     | web          |
+|        | GET|HEAD  | personaubicaciones/excell                             | personaubicaciones.excell       | App\Http\Controllers\PersonaDirController@personaubicacionesexcell     | web          |
+|        | GET|HEAD  | personaubicaciones/pdfshow/{id}                       | personaubicaciones.pdfshow      | App\Http\Controllers\PersonaDirController@personaubicacionespdfshow    | web          |
+|        | GET|HEAD  | personaubicaciones/show/{id}                          | personaubicaciones.show         | App\Http\Controllers\PersonaDirController@personaubicacionesshow       | web          |
+|        | PATCH     | personaubicaciones/{id}                               | personaubicaciones.update       | App\Http\Controllers\PersonaDirController@personaubicacionesupdate     | web          |
+|        | DELETE    | personaubicaciones/{id}                               | personaubicaciones.destroy      | App\Http\Controllers\PersonaDirController@personaubicacionesdestroy    | web          |
+|        | GET|HEAD  | personaubicaciones/{id}/edit                          | personaubicaciones.edit         | App\Http\Controllers\PersonaDirController@personaubicacionesedit       | web          |
+|        | POST      | register                                              |                                 | App\Http\Controllers\Auth\RegisterController@register
+                | web,guest    |
+|        | GET|HEAD  | register                                              | register                        | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      | web,guest    |
+|        | POST      | relperinmu                                            | relperinmu.store                | App\Http\Controllers\PersonaInmuebleController@relperinmustore         | web          |
+|        | GET|HEAD  | relperinmu/create/{id}                                | relperinmu.createp              | App\Http\Controllers\PersonaInmuebleController@relperinmucreate        | web          |
+|        | GET|HEAD  | relperinmu/show/{id}                                  | relperinmu.show                 | App\Http\Controllers\PersonaInmuebleController@relperinmushow          | web          |
+|        | GET|HEAD  | relperinmu/{id}                                       | relperinmu.expindex             | App\Http\Controllers\PersonaInmuebleController@expindex
+                | web          |
+|        | GET|HEAD  | relperinmu/{id}/edit                                  | relperinmu.edit                 | App\Http\Controllers\PersonaInmuebleController@relperinmuedit          | web          |
+|        | GET|HEAD  | relperinmuadd/{id}                                    | relperinmuadd.inmuindex         | App\Http\Controllers\PersonaInmuebleController@expindexadd             | web          |
+|        | DELETE    | relperinmudel/{id}                                    | relperinmu.destroy              | App\Http\Controllers\PersonaInmuebleController@relperinmudestroy       | web          |
+|        | PATCH     | relperinmupd/{id}                                     | relperinmu.update               | App\Http\Controllers\PersonaInmuebleController@relperinmuupdate        | web          |
+|        | GET|HEAD  | select                                                |                                 | App\Http\Controllers\CodPoController@getEstados
+                | web          |
+|        | GET|HEAD  | selimgids/{imagenid}                                  | personaImagesids.selimgids      | App\Http\Controllers\PersonaImagesidsController@selimgids              | web          |
+|        | GET|HEAD  | showimgids/{personaid}                                | personaImagesids.showimgids     | App\Http\Controllers\PersonaImagesidsController@showimgids             | web          |
+|        | GET|HEAD  | ubicaciones                                           |                                 | App\Http\Controllers\LocationController@getUbicaciones
+                | web          |
+|        | POST      | uploadimg                                             | personaImagesids.upload         | App\Http\Controllers\PersonaImagesidsController@uploadImgid            | web          |
+|        | POST      | upstore                                               | personaImagesids.storeupload    | App\Http\Controllers\PersonaImagesidsController@storeupload            | web          |
++--------+-----------+-------------------------------------------------------+---------------------------------+------------------------------------------------------------------------+--------------+
+
+C:\laragon\www\Kali (master)

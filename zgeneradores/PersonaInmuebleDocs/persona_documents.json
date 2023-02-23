@@ -1,0 +1,91 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "persona_id",
+      "dbType": "integer:unsigned:default,0:foreign,personas,id",
+    "htmlType": "text",
+    "relation": "mt1,persona,persona_id,id"   
+}, 
+{
+    "name": "doctype_id",
+      "dbType": "integer:unsigned:default,0:foreign,doc_types,id",
+    "htmlType": "text",
+    "relation": "mt1,DocType,doctype_id,id"   
+},	
+{
+    "name": "path",
+    "dbType": "string,250",
+    "htmlType": "text",
+    "validations": "required|max:250|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "filename",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "validations": "required|max:100|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "link",
+    "dbType": "string,250",
+    "htmlType": "text",
+    "validations": "required|max:250|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "activ",
+    "dbType": "integer,false,true",
+    "htmlType": "checkbox",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]                      

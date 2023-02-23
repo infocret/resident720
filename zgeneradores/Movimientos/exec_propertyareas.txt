@@ -1,0 +1,94 @@
+php artisan infyom:api_scaffold propertyareas --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_propertyareas.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback propertyareas scaffold
+
+php artisan infyom:rollback propertyareas api
+
+php artisan infyom:rollback propertyareas api_scaffold
+
+
+**********************************************************
+
+                                                                                                                                                                    
+C:\laragon\www\testc1 (master)                                                                                                                                      
+? php artisan infyom:api_scaffold propertyareas --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_propertyareas.json"                                         
+                                                                                                                                                                    
+Migration created:                                                                                                                                                  
+2018_05_24_033104_create_propertyareas_table.php                                                                                                                    
+                                                                                                                                                                    
+Model created:                                                                                                                                                      
+propertyareas.php                                                                                                                                                   
+                                                                                                                                                                    
+Repository created:                                                                                                                                                 
+propertyareasRepository.php                                                                                                                                         
+                                                                                                                                                                    
+Create Request created:                                                                                                                                             
+CreatepropertyareasAPIRequest.php                                                                                                                                   
+                                                                                                                                                                    
+Update Request created:                                                                                                                                             
+UpdatepropertyareasAPIRequest.php                                                                                                                                   
+                                                                                                                                                                    
+API Controller created:                                                                                                                                             
+propertyareasAPIController.php                                                                                                                                      
+                                                                                                                                                                    
+propertyareas api routes added.                                                                                                                                     
+                                                                                                                                                                    
+RepositoryTest created:                                                                                                                                             
+propertyareasRepositoryTest.php                                                                                                                                     
+                                                                                                                                                                    
+TestTrait created:                                                                                                                                                  
+MakepropertyareasTrait.php                                                                                                                                          
+                                                                                                                                                                    
+ApiTest created:                                                                                                                                                    
+propertyareasApiTest.php                                                                                                                                            
+                                                                                                                                                                    
+Create Request created:                                                                                                                                             
+CreatepropertyareasRequest.php                                                                                                                                      
+                                                                                                                                                                    
+Update Request created:                                                                                                                                             
+UpdatepropertyareasRequest.php                                                                                                                                      
+                                                                                                                                                                    
+Controller created:                                                                                                                                                 
+propertyareasController.php                                                                                                                                         
+                                                                                                                                                                    
+Generating Views...                                                                                                                                                 
+table.blade.php created                                                                                                                                             
+index.blade.php created                                                                                                                                             
+field.blade.php created                                                                                                                                             
+create.blade.php created                                                                                                                                            
+edit.blade.php created                                                                                                                                              
+show_fields.blade.php created                                                                                                                                       
+show.blade.php created                                                                                                                                              
+Views created:                                                                                                                                                      
+                                                                                                                                                                    
+propertyareas routes added.                                                                                                                                         
+                                                                                                                                                                    
+propertyareas menu added.                                                                                                                                           
+                                                                                                                                                                    
+                                                                                                                                                                    
+Do you want to migrate database? [y|N] (yes/no) [no]:                                                                                                               
+ > y                                                                                                                                                                
+                                                                                                                                                                    
+Migrating: 2018_05_24_033104_create_propertyareas_table                                                                                                             
+Migrated:  2018_05_24_033104_create_propertyareas_table                                                                                                             
+Generating autoload files                                                                                                                                           
+                                                                                                                                                                    
+C:\laragon\www\testc1 (master)                                                                                                                                      
+?                                                                                                                                                                   
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    
+                                                                                                                                                                    

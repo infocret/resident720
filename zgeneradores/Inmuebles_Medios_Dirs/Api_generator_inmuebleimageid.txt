@@ -1,0 +1,84 @@
+﻿
+
+Antes de ejecutar respaldar controller y repositpory
+
+ejecutar con --skyp=migration,model,views,menu
+
+Para que no genere migracion modelo ni vistas, ni agregue al menu
+
+Al finalizar borrar ruta web que seguro la repetira
+
+===============================================================
+
+php artisan infyom:api_scaffold InmuebleImagesids --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_inmuebleImagesids.json" 
+
+
+--skip=migration,model,views,menu
+
+=============================================================================
+
+C:\laragon\www\testc1 (master)
+λ php artisan infyom:api_scaffold InmuebleImagesids --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_inmuebleImagesids.json"
+
+Migration created:
+2018_05_12_055129_create_inmueble_imagesids_table.php
+
+Model created:
+InmuebleImagesids.php
+
+Repository created:
+InmuebleImagesidsRepository.php
+
+Create Request created:
+CreateInmuebleImagesidsAPIRequest.php
+
+Update Request created:
+UpdateInmuebleImagesidsAPIRequest.php
+
+API Controller created:
+InmuebleImagesidsAPIController.php
+
+inmuebleImagesids api routes added.
+
+RepositoryTest created:
+InmuebleImagesidsRepositoryTest.php
+
+TestTrait created:
+MakeInmuebleImagesidsTrait.php
+
+ApiTest created:
+InmuebleImagesidsApiTest.php
+
+Create Request created:
+CreateInmuebleImagesidsRequest.php
+
+Update Request created:
+UpdateInmuebleImagesidsRequest.php
+
+Controller created:
+InmuebleImagesidsController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+inmuebleImagesids routes added.
+
+inmuebleImagesids menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_05_12_055129_create_inmueble_imagesids_table
+Migrated:  2018_05_12_055129_create_inmueble_imagesids_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+λ

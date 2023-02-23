@@ -1,0 +1,102 @@
+php artisan infyom:api_scaffold provcats --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_provcats.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback provcats scaffold
+
+php artisan infyom:rollback provcats api
+
+php artisan infyom:rollback provcats api_scaffold
+
+============================================================================================
+
+
+                                                                                                                                                                 
+C:\laragon\www\testc1 (master)                                                                                                                                   
+? php artisan infyom:api_scaffold provcats --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_provcats.json"                                                
+                                                                                                                                                                 
+Migration created:                                                                                                                                               
+2018_05_25_192726_create_provcats_table.php                                                                                                                      
+                                                                                                                                                                 
+Model created:                                                                                                                                                   
+provcats.php                                                                                                                                                     
+                                                                                                                                                                 
+Repository created:                                                                                                                                              
+provcatsRepository.php                                                                                                                                           
+                                                                                                                                                                 
+Create Request created:                                                                                                                                          
+CreateprovcatsAPIRequest.php                                                                                                                                     
+                                                                                                                                                                 
+Update Request created:                                                                                                                                          
+UpdateprovcatsAPIRequest.php                                                                                                                                     
+                                                                                                                                                                 
+API Controller created:                                                                                                                                          
+provcatsAPIController.php                                                                                                                                        
+                                                                                                                                                                 
+provcats api routes added.                                                                                                                                       
+                                                                                                                                                                 
+RepositoryTest created:                                                                                                                                          
+provcatsRepositoryTest.php                                                                                                                                       
+                                                                                                                                                                 
+TestTrait created:                                                                                                                                               
+MakeprovcatsTrait.php                                                                                                                                            
+                                                                                                                                                                 
+ApiTest created:                                                                                                                                                 
+provcatsApiTest.php                                                                                                                                              
+                                                                                                                                                                 
+Create Request created:                                                                                                                                          
+CreateprovcatsRequest.php                                                                                                                                        
+                                                                                                                                                                 
+Update Request created:                                                                                                                                          
+UpdateprovcatsRequest.php                                                                                                                                        
+                                                                                                                                                                 
+Controller created:                                                                                                                                              
+provcatsController.php                                                                                                                                           
+                                                                                                                                                                 
+Generating Views...                                                                                                                                              
+table.blade.php created                                                                                                                                          
+index.blade.php created                                                                                                                                          
+field.blade.php created                                                                                                                                          
+create.blade.php created                                                                                                                                         
+edit.blade.php created                                                                                                                                           
+show_fields.blade.php created                                                                                                                                    
+show.blade.php created                                                                                                                                           
+Views created:                                                                                                                                                   
+                                                                                                                                                                 
+provcats routes added.                                                                                                                                           
+                                                                                                                                                                 
+provcats menu added.                                                                                                                                             
+                                                                                                                                                                 
+                                                                                                                                                                 
+Do you want to migrate database? [y|N] (yes/no) [no]:                                                                                                            
+ > y                                                                                                                                                             
+                                                                                                                                                                 
+Migrating: 2018_05_25_192726_create_provcats_table                                                                                                               
+Migrated:  2018_05_25_192726_create_provcats_table                                                                                                               
+Generating autoload files                                                                                                                                        
+                                                                                                                                                                 
+C:\laragon\www\testc1 (master)                                                                                                                                   
+?                                                                                                                                                                
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 
+                                                                                                                                                                 

@@ -1,0 +1,63 @@
+[
+{
+	"name": "id",
+	"dbType": "increments",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": true,
+	"inForm": false,
+	"inIndex": false
+},
+{
+    "name": "ident",
+    "dbType": "string,8",
+    "htmlType": "text",
+    "validations": "required|max:8|min:2",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "nombre",
+    "dbType": "string,25",
+    "htmlType": "text",
+    "validations": "required|max:25|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 	
+
+{
+	"name": "created_at",
+	"dbType": "timestamp",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": false,
+	"inForm": false,
+	"inIndex": false
+},
+{
+	"name": "updated_at",
+	"dbType": "timestamp",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": false,
+	"inForm": false,
+	"inIndex": false
+},
+{
+    "name": "continent_id",    
+    "type": "relation",
+    "relation": "1tm,countrie,continent_id,id" 	
+}               
+]

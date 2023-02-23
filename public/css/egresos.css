@@ -1,0 +1,108 @@
+/* 
+Estilo para tabla egresos
+Desarrollo: Julio Buendia
+Fecha: 2020 03 19   12 : 00
+https://divtable.com/table-styler/
+*/
+div.BlueRows {
+  font-family: Verdana, Geneva, sans-serif;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.divTable.BlueRows .divTableCell, .divTable.BlueRows .divTableHead {
+  border: 1px solid #FFFFFF;
+  padding: 1px 1px;   
+}
+.divTable.BlueRows .divTableBody .divTableCell {
+  font-size: 10px;  
+}
+.divTableCell{
+  text-align:center;
+  justify-content: center;
+  align-items: center; 
+  vertical-align: middle;
+}
+.divTable.BlueRows .divTableRow:nth-child(even) {
+  background: #D0E4F5;
+}
+.divTable.BlueRows .divTableHeading {
+  background: #0B6FA4;
+  border-bottom: 5px solid #FFFFFF;
+}
+.divTable.BlueRows .divTableHeading .divTableHead {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+.divTable.BlueRows .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.BlueRows .tableFootStyle {
+  font-size: 11px;
+  font-weight: bold;
+  color: #333333;
+  background: #D0E4F5;
+  border-top: 3px solid #444444;
+}
+.BlueRows .tableFootStyle {
+  font-size: 11px;
+}
+/* https://divtable.com/table-styler/   */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+/*Para selects de tabla de detalle*/
+.selpick{
+  font-size:8pt;
+  
+}
+/*Para el texto descripcion de la tabla de detalle*/
+.desc{
+  font-size:8pt;
+  width:200px;
+  max-width: 500px;
+  min-width: 100px
+  height:20px;
+  text-align:left
+}
+/*Para el texto descripcion de la tabla de detalle*/
+.num{
+  font-size:8pt;
+  width:70px;
+  max-width: 80px;
+  min-width: 60px
+  height:18px;
+  text-align:right; 
+}
+
+/*Para el texto de etiquetas*/
+.tlabel{
+  font-size:9pt;
+ /* 
+  width:70px;
+  max-width: 80px;
+  min-width: 60px
+  height:18px;
+  */
+  text-align:left; 
+}
+/*Para el texto de etiquetas de pie de tabla detalle*/
+.textpie{
+  font-size:8pt;
+  width:70px;
+  max-width: 80px;
+  min-width: 60px;
+  height:18px;
+  text-align:right; 
+}

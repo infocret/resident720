@@ -1,0 +1,152 @@
+php artisan infyom:api_scaffold service --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_service.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback service scaffold
+
+php artisan infyom:rollback service api
+
+php artisan infyom:rollback service api_scaffold
+
+
+C:\laragon\www\testc1 (master)
+λ composer require yajra/laravel-datatables-oracle:"~8.0"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Nothing to install or update
+Package phpoffice/phpexcel is abandoned, you should avoid using it. Use phpoffice/phpspreadsheet instead.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover
+Discovered Package: fideloper/proxy
+Discovered Package: laracasts/flash
+Discovered Package: infyomlabs/laravel-generator
+Discovered Package: infyomlabs/adminlte-templates
+Discovered Package: barryvdh/laravel-dompdf
+Discovered Package: laravel/tinker
+Discovered Package: laravelcollective/html
+Discovered Package: laraveles/spanish
+Discovered Package: prettus/l5-repository
+Discovered Package: maatwebsite/excel
+Discovered Package: jenssegers/date
+Discovered Package: yajra/laravel-datatables-oracle
+Package manifest generated successfully.
+
+C:\laragon\www\testc1 (master)
+λ php artisan vendor:publish --provider=Yajra\DataTables\DataTablesServiceProvider
+Copied File [\vendor\yajra\laravel-datatables-oracle\src\config\datatables.php] To [\config\datatables.php]
+Publishing complete.
+
+C:\laragon\www\testc1 (master)
+λ composer require yajra/laravel-datatables-buttons:^3.0
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 2 installs, 0 updates, 0 removals
+  - Installing yajra/laravel-datatables-html (v3.7.1) Loading from cache
+  - Installing yajra/laravel-datatables-buttons (v3.0.0) Downloading: 100%
+yajra/laravel-datatables-buttons suggests installing barryvdh/laravel-snappy (Allows exporting of dataTable to PDF using the print view.)
+Package phpoffice/phpexcel is abandoned, you should avoid using it. Use phpoffice/phpspreadsheet instead.
+Writing lock file
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover
+Discovered Package: fideloper/proxy
+Discovered Package: laracasts/flash
+Discovered Package: infyomlabs/laravel-generator
+Discovered Package: infyomlabs/adminlte-templates
+Discovered Package: barryvdh/laravel-dompdf
+Discovered Package: laravel/tinker
+Discovered Package: laravelcollective/html
+Discovered Package: laraveles/spanish
+Discovered Package: prettus/l5-repository
+Discovered Package: maatwebsite/excel
+Discovered Package: jenssegers/date
+Discovered Package: yajra/laravel-datatables-oracle
+Discovered Package: yajra/laravel-datatables-html
+Discovered Package: yajra/laravel-datatables-buttons
+Package manifest generated successfully.
+
+C:\laragon\www\testc1 (master)
+λ php artisan vendor:publish --tag=datatables-buttons --force
+Copied File [\vendor\yajra\laravel-datatables-buttons\src\config\config.php] To [\config\datatables-buttons.php]
+Copied File [\vendor\yajra\laravel-datatables-buttons\src\resources\assets\buttons.server-side.js] To [\public\vendor\datatables\buttons.server-side.js]
+Copied Directory [\vendor\yajra\laravel-datatables-buttons\src\resources\views] To [\resources\views\vendor\datatables]
+Publishing complete.
+
+C:\laragon\www\testc1 (master)
+λ php artisan infyom:api_scaffold service --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_service.json"
+
+Migration created:
+2018_06_05_050622_create_services_table.php
+
+Model created:
+service.php
+
+Repository created:
+serviceRepository.php
+
+Create Request created:
+CreateserviceAPIRequest.php
+
+Update Request created:
+UpdateserviceAPIRequest.php
+
+API Controller created:
+serviceAPIController.php
+
+services api routes added.
+
+RepositoryTest created:
+serviceRepositoryTest.php
+
+TestTrait created:
+MakeserviceTrait.php
+
+ApiTest created:
+serviceApiTest.php
+
+Create Request created:
+CreateserviceRequest.php
+
+Update Request created:
+UpdateserviceRequest.php
+
+DataTable created:
+serviceDataTable.php
+
+Controller created:
+serviceController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+services routes added.
+
+services menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_06_05_050622_create_services_table
+Migrated:  2018_06_05_050622_create_services_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+λ

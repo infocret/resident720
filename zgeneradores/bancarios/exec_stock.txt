@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold stock --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_stock.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback stock scaffold
+
+php artisan infyom:rollback stock api
+
+php artisan infyom:rollback stock api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold stock --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_stock.json"
+
+Migration created:
+2018_07_28_041415_create_stocks_table.php
+
+Model created:
+stock.php
+
+Repository created:
+stockRepository.php
+
+Create Request created:
+CreatestockAPIRequest.php
+
+Update Request created:
+UpdatestockAPIRequest.php
+
+API Controller created:
+stockAPIController.php
+
+stocks api routes added.
+
+RepositoryTest created:
+stockRepositoryTest.php
+
+TestTrait created:
+MakestockTrait.php
+
+ApiTest created:
+stockApiTest.php
+
+Create Request created:
+CreatestockRequest.php
+
+Update Request created:
+UpdatestockRequest.php
+
+DataTable created:
+stockDataTable.php
+
+Controller created:
+stockController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+stocks routes added.
+
+stocks menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_28_041415_create_stocks_table
+Migrated:  2018_07_28_041415_create_stocks_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

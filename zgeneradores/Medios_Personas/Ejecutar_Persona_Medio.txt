@@ -1,0 +1,291 @@
+====================******* Validaciones *********=========================================
+
+required
+min:5
+max:5
+email
+numeric
+
+=====******* Establecer relacion foranea en tabla principal********=========================
+
+En las relaciones de tipo uno a muchos el id se relaciona en la otra tabla
+para eso se define la relacion en esta tabla creando el campo que aparecera en la otra taba
+
+
+Some relationships, like One to Many do not have a local field in current model, 
+but some other model contains its primary key as foreign key. In such cases, you can define 
+relationship by following definition:
+
+Uno a muchos
+{
+    "name": "persona_id",    
+    "type": "relation",
+    "relation": "1tm,Comment,post_id"
+} 
+
+Muchos a muchos
+{
+    "name": "persona_id",    
+    "type": "relation",
+    "relation": "mtm,medio,MeedioPersona,persona_id,medio_id"
+} 
+
+=====******* Establecer relaciones foranea l********=========================
+
+{
+    "name": "medio_id",
+      "dbType": "integer:unsigned:default,0:foreign,medios,id",
+    "htmlType": "text",
+    "relation": "mt1,medio,medio_id,id"   
+}, 
+{
+    "name": "persona_id",
+      "dbType": "integer:unsigned:default,0:foreign,personas,id",
+    "htmlType": "text",
+    "relation": "mt1,persona,persona_id,id"   
+}, 
+
+En el modelo peersona Se genera este codigo si la rel es muchos a muchos y se usa la tabla pivote para llegar desde una a otra
+/**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     **/
+    public function meedios()
+    {
+        return $this->belongsToMany(\App\Models\meedio::class, 'MeedioPeersona', 'persona_id', 'medio_id');
+    }
+
+En el modelo peersona Se genera este codigo si la rel es uno a muchos 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     **/
+    public function meedioPeersonas()
+    {
+        return $this->hasMany(\App\Models\MeedioPeersonas::class, 'persona_id', 'id');
+    }
+
+
+En el modelo meedio_peersonas se genera rel es uno a muchos  o muchos a muchos y esta es la tabla pivote
+/**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     **/
+    public function meedio()
+    {
+        return $this->belongsTo(\App\Models\meedio::class, 'medio_id', 'id');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     **/
+    public function peersona()
+    {
+        return $this->belongsTo(\App\Models\peersona::class, 'persona_id', 'id');
+    }
+
+
+
+
+
+
+
+
+En el modelo meedio Se genera este codigo si la rel es muchos a muchos y se usa la tabla pivote para llegar desde una a otra
+ /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     **/
+    public function peersonas()
+    {
+        return $this->belongsToMany(\App\Models\peersona::class, 'MeedioPeersona', 'medio_id', 'persona_id');
+    }
+
+En el modelo meedio Se genera este codigo si la rel es uno a muchos 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     **/
+    public function meedioPeersonas()
+    {
+        return $this->hasMany(\App\Models\MeedioPeersona::class, 'medio_id', 'id');
+    }
+=====******* Tipo de relacion ********=========================
+
+
+Relationships Inputs
+Relationship Type		Valid Examples
+One to One			1t1,Phone 
+				1t1,Phone,phone_id 
+				1t1,Phone,phone_id,id 
+
+One to Many			1tm,Comment 
+				1tm,Comment,post_id 
+				1tm,Comment,post_id,id
+
+Many to One			mt1,Post 
+				mt1,Post,post_id
+
+Many to Many			mtm,Role 
+				mtm,Role,user_roles 
+				mtm,Role,user_roles,user_id,role_id 
+
+============================================================================================
+==============================***** Roolbacks *****=========================================
+============================================================================================
+php artisan infyom:rollback Persona scaffold
+php artisan infyom:rollback Persona api
+php artisan infyom:rollback Persona api_scaffold
+============================================================================================
+php artisan infyom:rollback Medio scaffold
+php artisan infyom:rollback Medio api
+php artisan infyom:rollback Medio api_scaffold
+============================================================================================
+php artisan infyom:rollback MedioPersona scaffold
+php artisan infyom:rollback MedioPersona api
+php artisan infyom:rollback MedioPersona api_scaffold
+============================================================================================
+
+=======================================================================================================================================================
+=======================================================================================================================================================
+
+php artisan infyom:scaffold persona --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_persona.json"
+
+
+php artisan infyom:scaffold medio --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_medio.json"
+
+php artisan infyom:scaffold MedioPersona --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_MedioPersona.json"
+
+=======================================================================================================================================================
+=======================================================================================================================================================
+
+
+============================================================================================
+============================================================================================
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:scaffold persona --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_persona.json"
+
+Migration created:
+2018_02_16_094647_create_personas_table.php
+
+Model created:
+persona.php
+
+Repository created:
+personaRepository.php
+
+Create Request created:
+CreatepersonaRequest.php
+
+Update Request created:
+UpdatepersonaRequest.php
+
+Controller created:
+personaController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+personas routes added.
+
+personas menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_02_16_094647_create_personas_table
+Migrated:  2018_02_16_094647_create_personas_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:scaffold medio --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_medio.json"
+
+Migration created:
+2018_02_16_094705_create_medios_table.php
+
+Model created:
+medio.php
+
+Repository created:
+medioRepository.php
+
+Create Request created:
+CreatemedioRequest.php
+
+Update Request created:
+UpdatemedioRequest.php
+
+Controller created:
+medioController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+medios routes added.
+
+medios menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_02_16_094705_create_medios_table
+Migrated:  2018_02_16_094705_create_medios_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:scaffold MedioPersona --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_MedioPersona.json"
+
+Migration created:
+2018_02_16_094726_create_medio_personas_table.php
+
+Model created:
+MedioPersona.php
+
+Repository created:
+MedioPersonaRepository.php
+
+Create Request created:
+CreateMedioPersonaRequest.php
+
+Update Request created:
+UpdateMedioPersonaRequest.php
+
+Controller created:
+MedioPersonaController.php
+
+Generating Views...
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+medioPersonas routes added.
+
+medioPersonas menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_02_16_094726_create_medio_personas_table
+Migrated:  2018_02_16_094726_create_medio_personas_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

@@ -1,0 +1,92 @@
+php artisan infyom:api_scaffold movtohead --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_movtohead.json"
+
+============================================================================================
+
+--skip=migration,model,views,menu
+ --paginate=10 
+ --datatables=true 
+ --save 
+
+=============================***** Roollbacks *****=========================================
+
+============================================================================================
+
+php artisan infyom:rollback movtohead scaffold
+
+php artisan infyom:rollback movtohead api
+
+php artisan infyom:rollback movtohead api_scaffold
+
+=============================***** Skip, options *****=========================================
+ --skip=migration,model,controllers,api_controller,scaffold_controller,scaffold_requests,routes,api_routes,scaffold_routes,views,tests,menu,dump-autoload 
+
+
+C:\laragon\www\testc1 (master)
+? php artisan infyom:api_scaffold movtohead --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_movtohead.json"
+
+Migration created:
+2018_07_27_025344_create_movtoheads_table.php
+
+Model created:
+movtohead.php
+
+Repository created:
+movtoheadRepository.php
+
+Create Request created:
+CreatemovtoheadAPIRequest.php
+
+Update Request created:
+UpdatemovtoheadAPIRequest.php
+
+API Controller created:
+movtoheadAPIController.php
+
+movtoheads api routes added.
+
+RepositoryTest created:
+movtoheadRepositoryTest.php
+
+TestTrait created:
+MakemovtoheadTrait.php
+
+ApiTest created:
+movtoheadApiTest.php
+
+Create Request created:
+CreatemovtoheadRequest.php
+
+Update Request created:
+UpdatemovtoheadRequest.php
+
+DataTable created:
+movtoheadDataTable.php
+
+Controller created:
+movtoheadController.php
+
+Generating Views...
+datatables_actions.blade.php created
+table.blade.php created
+index.blade.php created
+field.blade.php created
+create.blade.php created
+edit.blade.php created
+show_fields.blade.php created
+show.blade.php created
+Views created:
+
+movtoheads routes added.
+
+movtoheads menu added.
+
+
+Do you want to migrate database? [y|N] (yes/no) [no]:
+ > y
+
+Migrating: 2018_07_27_025344_create_movtoheads_table
+Migrated:  2018_07_27_025344_create_movtoheads_table
+Generating autoload files
+
+C:\laragon\www\testc1 (master)
+?

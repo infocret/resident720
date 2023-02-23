@@ -1,0 +1,100 @@
+====================******* Comando Generador desde archivo .json *********=========================================
+
+=========================================================================================================================================
+
+**** USAR ESTA PLANTILLA para ejecutar la creacion de codigo, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+
+sustituir <continents>   por el nombre de la tabla en base de datos pero en singular !!!
+
+OJO !!! 
+
+Si la tabla en DB es:  palabra_otrapalabras (palabras en minusculas con guion bajo "_" en medio y en plural)
+en la instruccion debe ser:  PalablaOtrapalabra (Nombres juntos capitalizados en singular sin la "s" final)
+
+sustituir <fields_continents> por el nombre del archivo que tiene la definicion de campos
+
+php artisan infyom:scaffold continents  --fieldsFile="C:\laragon\www\testc1\zgeneradores\Locations\fields_continents.json"
+
+
+**** USAR ESTA PLANTILLA para realizar un rollback, NO COPIES LOS QUE YA SE USARON !!!!!!
+
+php artisan infyom:rollback continents scaffold
+php artisan infyom:rollback continents api
+php artisan infyom:rollback continents api_scaffold
+
+
+modelo continents (continentes)
+id
+ident
+nombre
+
+
+
+
+========================================= continents
+
+[
+{
+	"name": "id",
+	"dbType": "increments",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": true,
+	"inForm": false,
+	"inIndex": false
+},
+{
+    "name": "ident",
+    "dbType": "string,8",
+    "htmlType": "text",
+    "validations": "required|max:8|min:2",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 
+{
+    "name": "nombre",
+    "dbType": "string,25",
+    "htmlType": "text",
+    "validations": "required|max:25|min:3",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+}, 	
+
+{
+	"name": "created_at",
+	"dbType": "timestamp",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": false,
+	"inForm": false,
+	"inIndex": false
+},
+{
+	"name": "updated_at",
+	"dbType": "timestamp",
+	"htmlType": "",
+	"validations": "",
+	"searchable": false,
+	"fillable": false,
+	"primary": false,
+	"inForm": false,
+	"inIndex": false
+},
+{
+    "name": "continent_id",    
+    "type": "relation",
+    "relation": "1tm,countrie,continent_id,id" 	
+}               
+]                      
+

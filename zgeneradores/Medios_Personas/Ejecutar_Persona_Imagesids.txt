@@ -1,0 +1,56 @@
+php artisan infyom:rollback PersonaImagesids scaffold
+php artisan infyom:rollback PersonaImagesids api
+php artisan infyom:rollback PersonaImagesids api_scaffold
+
+
+php artisan infyom:scaffold PersonaImagesids --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_PersonaImagesids.json"
+
+
+
+                                                                                                                                                            
+C:\laragon\www\testc1 (master)                                                                                                                              
+λ php artisan infyom:scaffold PersonaImagesids --fieldsFile="C:\laragon\www\testc1\zgeneradores\fields_PersonaImagesids.json"                               
+                                                                                                                                                            
+Migration created:                                                                                                                                          
+2018_04_02_074445_create_persona_imagesids_table.php                                                                                                        
+                                                                                                                                                            
+Model created:                                                                                                                                              
+PersonaImagesids.php                                                                                                                                        
+                                                                                                                                                            
+Repository created:                                                                                                                                         
+PersonaImagesidsRepository.php                                                                                                                              
+                                                                                                                                                            
+Create Request created:                                                                                                                                     
+CreatePersonaImagesidsRequest.php                                                                                                                           
+                                                                                                                                                            
+Update Request created:                                                                                                                                     
+UpdatePersonaImagesidsRequest.php                                                                                                                           
+                                                                                                                                                            
+Controller created:                                                                                                                                         
+PersonaImagesidsController.php                                                                                                                              
+                                                                                                                                                            
+Generating Views...                                                                                                                                         
+table.blade.php created                                                                                                                                     
+index.blade.php created                                                                                                                                     
+field.blade.php created                                                                                                                                     
+create.blade.php created                                                                                                                                    
+edit.blade.php created                                                                                                                                      
+show_fields.blade.php created                                                                                                                               
+show.blade.php created                                                                                                                                      
+Views created:                                                                                                                                              
+                                                                                                                                                            
+personaImagesids routes added.                                                                                                                              
+                                                                                                                                                            
+personaImagesids menu added.                                                                                                                                
+                                                                                                                                                            
+                                                                                                                                                            
+Do you want to migrate database? [y|N] (yes/no) [no]:                                                                                                       
+ > y                                                                                                                                                        
+                                                                                                                                                            
+Migrating: 2018_04_02_074445_create_persona_imagesids_table                                                                                                 
+Migrated:  2018_04_02_074445_create_persona_imagesids_table                                                                                                 
+Generating autoload files                                                                                                                                   
+                                                                                                                                                            
+                                                                                                                                                            
+                                                                                                                                                            
+                                                                                                                                                            

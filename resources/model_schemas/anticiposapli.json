@@ -1,0 +1,179 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "anticipo_id",
+        "dbType": "integer:unsigned:default,0:foreign,anticipos,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "inmucharg_id",
+        "dbType": "integer:unsigned:default,0:foreign,inmucharges,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "inmumovto_id",
+        "dbType": "integer:unsigned:default,0:foreign,inmumovtos,id",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "fechareg",
+        "dbType": "dateTime",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "saldoini",
+        "dbType": "decimal,19,4",
+        "htmlType": "number",
+        "validations": "required|max:9999999|min:0",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "monto",
+        "dbType": "decimal,19,4",
+        "htmlType": "number",
+        "validations": "required|max:9999999|min:0",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "saldofin",
+        "dbType": "decimal,19,4",
+        "htmlType": "number",
+        "validations": "required|max:9999999|min:0",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "status",
+        "dbType": "string,15",
+        "htmlType": "text",
+        "validations": "required|max:15|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "apmode",
+        "dbType": "string,35",
+        "htmlType": "text",
+        "validations": "required|max:35|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "desc",
+        "dbType": "string,150",
+        "htmlType": "text",
+        "validations": "required|max:150|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "observ",
+        "dbType": "string,250",
+        "htmlType": "text",
+        "validations": "required|max:250|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "userreg",
+        "dbType": "string,150",
+        "htmlType": "text",
+        "validations": "required|max:150|min:1",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,anticipo,anticipo_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,inmucharge,inmucharg_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,inmumovto,inmumovto_id,id"
+    }
+]
